@@ -9,7 +9,7 @@ const text = {
 const PageNotFound = () => (
   <>
     <SEO title={text.pageNotFound} />
-    {text.pageNotFound}
+    <p>{text.pageNotFound}</p>
   </>
 )
 
