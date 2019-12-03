@@ -1,8 +1,8 @@
 import React from "react"
 
-import { appName } from "../../../constants/text"
+import { appName } from "constants/text"
 
-import SEO from "../../seo"
+import SEO from "components/seo"
 
 const HomePage = () => (
   <>

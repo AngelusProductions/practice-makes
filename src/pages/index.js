@@ -1,6 +1,6 @@
 import React from "react"
 
-import HomePage from "../components/HomePage/root"
+import HomePage from "components/HomePage/root"
 
 const Index = () => <HomePage />
 
