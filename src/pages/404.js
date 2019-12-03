@@ -1,5 +1,16 @@
-import { pageNotFoundText } from "../constants/text"
+import React from "react"
 
-const PageNotFound = () => pageNotFoundText
+import SEO from "../components/seo"
+
+const text = {
+  pageNotFound: "You just hit a route that doesn't exist... the sadness.",
+}
+
+const PageNotFound = () => (
+  <>
+    <SEO title={text.pageNotFound} />
+    {text.pageNotFound}
+  </>
+)
 
 export default PageNotFound
