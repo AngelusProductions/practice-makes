@@ -7,7 +7,7 @@ import SEO from "../../seo"
 const HomePage = () => (
   <>
     <SEO title={appName} />
-    {appName}
+    <p>{appName}</p>
   </>
 )
 
