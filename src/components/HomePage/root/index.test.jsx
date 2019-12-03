@@ -1,7 +1,7 @@
 import React from "react"
-import { cleanup } from "@testing-library/react"
-import { mount } from "enzyme"
 import "jest-enzyme"
+
+import { appName } from "constants/text"
 
 import HomePage from "."
 
@@ -18,5 +18,15 @@ describe("HomePage Component", () => {
     const homePageComponent = wrapper.find(HomePage)
 
     expect(homePageComponent).toExist()
+  })
+
+  it("should render a <p> tag", () => {
+    const pTag = wrapper.find("p")
+
+    expect(pTag).toExist()
+  })
+
+  it("should render the app's name", () => {
+    expect(wrapper.text()).toContain(appName)
   })
 })

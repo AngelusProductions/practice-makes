@@ -1,6 +1,4 @@
 import React from "react"
-import { cleanup } from "@testing-library/react"
-import { mount } from "enzyme"
 import "jest-enzyme"
 
 import Index from ".."

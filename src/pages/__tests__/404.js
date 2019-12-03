@@ -1,6 +1,4 @@
 import React from "react"
-import { cleanup } from "@testing-library/react"
-import { mount } from "enzyme"
 import "jest-enzyme"
 
 import PageNotFound, { text } from "../404"
@@ -27,6 +25,6 @@ describe("PageNotFound Component", () => {
   })
 
   it('should render the "pageNotFoundText" text', () => {
-    expect(wrapper.text()).toContain(text.PageNotFound)
+    expect(wrapper.text()).toContain(text.pageNotFound)
   })
 })
