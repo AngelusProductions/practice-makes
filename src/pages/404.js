@@ -2,6 +2,6 @@ import React from "react"
 
 import { pageNotFoundText } from "../constants/text"
 
-const PageNotFound = () => <p>{pageNotFoundText}</p>
+const PageNotFound = () => <>{pageNotFoundText}</>
 
 export default PageNotFound
