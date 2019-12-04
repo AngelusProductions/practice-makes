@@ -10,69 +10,74 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { appName, appAuthor } from "constants/text"
+
 function SEO({ description, lang, meta, title }) {
-  const query = useStaticQuery(
+  const response = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
-            description
+            descriptionq
             author
           }
         }
       }
     `
   )
-  const site = query && query.site
-  const metaDescription = description || (site && site.siteMetadata.description)
-  const titleTemplate = site && `%s | ${site.siteMetadata.title}`
+
+  let metaDescription = appName,
+    titleTemplate = appName,
+    twitterCreator = appAuthor
+
+  if (response) {
+    metaDescription = description || response.site.siteMetadata.description
+    titleTemplate = `%s | ${response.site.siteMetadata.title}`
+    twitterCreator = response.site.siteMetadata.author
+  }
   return (
-    <>
-      {site && (
-        <Helmet
-          htmlAttributes={{
-            lang,
-          }}
-          title={title}
-          titleTemplate={titleTemplate}
-          meta={[
-            {
-              name: `description`,
-              content: metaDescription,
-            },
-            {
-              property: `og:title`,
-              content: title,
-            },
-            {
-              property: `og:description`,
-              content: metaDescription,
-            },
-            {
-              property: `og:type`,
-              content: `website`,
-            },
-            {
-              name: `twitter:card`,
-              content: `summary`,
-            },
-            {
-              name: `twitter:creator`,
-              content: site.siteMetadata.author,
-            },
-            {
-              name: `twitter:title`,
-              content: title,
-            },
-            {
-              name: `twitter:description`,
-              content: metaDescription,
-            },
-          ].concat(meta)}
-        />
-      )}
-    </>
+    <Helmet
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      titleTemplate={titleTemplate}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: twitterCreator,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+      ].concat(meta)}
+    />
   )
 }
 
