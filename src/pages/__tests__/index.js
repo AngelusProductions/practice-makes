@@ -20,18 +20,6 @@ describe("Index Component", () => {
     expect(index).toExist()
   })
 
-  it("should render an SEO Component", () => {
-    const seoComponent = wrapper.find(SEO)
-
-    expect(seoComponent).toExist()
-  })
-
-  it("should pass the SEO component the correct title prop", () => {
-    const seoComponents = wrapper.find(SEO)
-
-    expect(seoComponents.some(c => c.title === text.title))
-  })
-
   it("should render the HomePage component", () => {
     const homePage = wrapper.find(HomePage)
 
