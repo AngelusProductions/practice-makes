@@ -4,13 +4,9 @@ import { appName } from "constants/text"
 
 import SEO from "components/seo"
 
-export const text = {
-  title: "Home Page",
-}
-
 const HomePage = () => (
   <>
-    <SEO title={text.title} />
+    <SEO title={appName} />
     <p>{appName}</p>
   </>
 )
