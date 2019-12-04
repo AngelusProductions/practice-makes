@@ -25,18 +25,7 @@ describe("HomePage Component", () => {
     const seoComponent = wrapper.find(SEO)
 
     expect(seoComponent).toExist()
-  })
-
-  it("should pass the SEO component the correct title prop", () => {
-    const seoComponent = wrapper.find(SEO)
-
     expect(seoComponent.props().title).toBe(appName)
-  })
-
-  it("should render a <p> tag", () => {
-    const pTag = wrapper.find("p")
-
-    expect(pTag).toExist()
   })
 
   it("should render the app's name", () => {
