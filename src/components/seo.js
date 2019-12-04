@@ -19,7 +19,7 @@ function SEO({ description, lang, meta, title }) {
         site {
           siteMetadata {
             title
-            descriptionq
+            description
             author
           }
         }
