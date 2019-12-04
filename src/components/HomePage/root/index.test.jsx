@@ -3,7 +3,7 @@ import "jest-enzyme"
 
 import { appName } from "constants/text"
 
-import HomePage, { text } from "."
+import HomePage from "."
 import SEO from "components/seo"
 
 afterEach(cleanup)
@@ -30,7 +30,7 @@ describe("HomePage Component", () => {
   it("should pass the SEO component the correct title prop", () => {
     const seoComponent = wrapper.find(SEO)
 
-    expect(seoComponent.props().title).toBe(text.title)
+    expect(seoComponent.props().title).toBe(appName)
   })
 
   it("should render a <p> tag", () => {
