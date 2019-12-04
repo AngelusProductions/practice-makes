@@ -30,23 +30,13 @@ describe("HomePage Component", () => {
     const seoComponent = wrapper.find(SEO)
 
     expect(seoComponent).toExist()
-  })
-
-  it("should pass the SEO component the correct title prop", () => {
-    const seoComponent = wrapper.find(SEO)
-
-    expect(seoComponent.props().title).toBe(text.title)
+    expect(seoComponent.props().title).toBe(appName)
   })
 
   it("should render a Logo component", () => {
     const logoComponent = wrapper.find(Logo)
 
     expect(logoComponent).toExist()
-  })
-
-  it("should pass the Logo component the correct src prop", () => {
-    const logoComponent = wrapper.find(Logo)
-
     expect(logoComponent.props().src).toBe(text.logoSrc)
   })
 

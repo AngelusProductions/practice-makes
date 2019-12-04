@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, title }) {
     titleTemplate = `%s | ${response.site.siteMetadata.title}`
     twitterCreator = response.site.siteMetadata.author
   }
-  return (
+  return isSEOActive ? (
     <Helmet
       htmlAttributes={{
         lang,
@@ -78,6 +78,8 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     />
+  ) : (
+    <meta />
   )
 }
 
