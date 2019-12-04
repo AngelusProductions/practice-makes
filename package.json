@@ -38,7 +38,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest --watch --modulePaths=src"
+    "test": "jest --watchAll --modulePaths=src"
   },
   "repository": {
     "type": "git",
