@@ -26,6 +26,7 @@ function SEO({ description, lang, meta, title }) {
   )
   const site = query && query.site
   const metaDescription = description || (site && site.siteMetadata.description)
+  const titleTemplate = site && `%s | ${site.siteMetadata.title}`
   return (
     <>
       {site && (
@@ -34,7 +35,7 @@ function SEO({ description, lang, meta, title }) {
             lang,
           }}
           title={title}
-          titleTemplate={`%s | ${site.siteMetadata.title}`}
+          titleTemplate={titleTemplate}
           meta={[
             {
               name: `description`,
