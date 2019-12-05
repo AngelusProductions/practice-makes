@@ -1,8 +1,6 @@
 import React from "react"
 import "jest-enzyme"
 
-import { appName } from "constants/text"
-
 import PageNotFound, { text } from "../404"
 import SEO from "components/seo"
 
