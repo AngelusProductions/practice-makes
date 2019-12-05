@@ -5,7 +5,7 @@ import { mount } from "enzyme"
 import "jest-enzyme"
 
 import { cities } from "constants/data"
-import { mapMarkerIconText } from "constants/text"
+import { mapMarkerIconProps } from "constants/text"
 import {
   cityListItem,
   cityListItemLabel,
@@ -51,8 +51,8 @@ describe("CityListItem Component", () => {
     const imgTag = wrapper.find(`img.${mapMarkerIcon}`)
 
     expect(imgTag).toExist()
-    expect(imgTag.props().src).toBe(mapMarkerIconText.src)
-    expect(imgTag.props().alt).toBe(mapMarkerIconText.alt)
+    expect(imgTag.props().src).toBe(mapMarkerIconProps.src)
+    expect(imgTag.props().alt).toBe(mapMarkerIconProps.alt)
   })
 
   it("should render the correct city name text", () => {
