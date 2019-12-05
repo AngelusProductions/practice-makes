@@ -7,7 +7,6 @@ import { navMenuHome, navMenuDefault } from "./styles.module.css"
 import NavItem from "../NavItem"
 
 const NavMenu = ({ items, location }) => {
-  debugger
   const className =
     location.pathname === rootPath ? navMenuHome : navMenuDefault
   return (
