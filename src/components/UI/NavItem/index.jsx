@@ -1,15 +1,19 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { withRouter, Link } from "react-router-dom"
 
+import { rootPath } from "constants/paths"
 import { dashIcon } from "./styles.module.css"
 
-const NavItem = ({ name, url, isNotLastItem }) => (
-  <>
-    <Link to={url} key={name}>
-      {name}
-    </Link>
-    {isNotLastItem && <div className={dashIcon} />}
-  </>
-)
+const NavItem = ({ name, url, isNotLastItem, location }) => {
+  const isHomePage = location.pathname === rootPath
+  return (
+    <>
+      <Link to={url} key={name}>
+        {name}
+      </Link>
+      {isHomePage && isNotLastItem && <div className={dashIcon} />}
+    </>
+  )
+}
 
-export default NavItem
+export default withRouter(NavItem)
