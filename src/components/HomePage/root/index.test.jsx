@@ -5,7 +5,7 @@ import "jest-enzyme"
 import { appName } from "constants/text"
 import { homePage } from "./styles.module.css"
 
-import HomePage, { text } from "."
+import HomePage from "."
 import SEO from "components/seo"
 import Logo from "components/UI/Logo"
 import Tagline from "../Tagline"
