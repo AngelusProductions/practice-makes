@@ -2,58 +2,58 @@ import React from "react"
 import "jest-enzyme"
 
 import {
-  tagLine,
-  tagLineTopText,
-  tagLineBottomText,
-  tagLineBottomUnderline,
+  tagline,
+  taglineTop,
+  taglineBottom,
+  taglineBottomUnderline,
 } from "./styles.module.css"
 
-import TagLine, { text } from "."
+import Tagline, { text } from "."
 
 afterEach(cleanup)
 
-describe("TagLine Component", () => {
+describe("Tagline Component", () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(<TagLine />)
+    wrapper = mount(<Tagline />)
   })
 
-  it("should render the TagLine component", () => {
-    const TagLineComponent = wrapper.find(TagLine)
+  it("should render the Tagline component", () => {
+    const taglineComponent = wrapper.find(Tagline)
 
-    expect(TagLineComponent).toExist()
+    expect(taglineComponent).toExist()
   })
 
-  it('should render an <h1> tag with a class name of "TagLine"', () => {
-    const hOneTag = wrapper.find(`h1.${tagLine}`)
+  it('should render a <header> tag with a class name of "tagline"', () => {
+    const headerTag = wrapper.find(`header.${tagline}`)
 
-    expect(hOneTag).toExist()
+    expect(headerTag).toExist()
   })
 
-  it('should render a <span> tag with a class name of "tagLineTopText"', () => {
-    const spanTopText = wrapper.find(`span.${tagLineTopText}`)
+  it('should render a <span> tag with a class name of "taglineTop"', () => {
+    const spanTop = wrapper.find(`span.${taglineTop}`)
 
-    expect(spanTopText).toExist()
+    expect(spanTop).toExist()
   })
 
-  it('should render a <span> tag with a class name of "tagLineBottomText"', () => {
-    const spanBottomText = wrapper.find(`span.${tagLineBottomText}`)
+  it('should render a <span> tag with a class name of "taglineBottom"', () => {
+    const spanBottom = wrapper.find(`span.${taglineBottom}`)
 
-    expect(spanBottomText).toExist()
+    expect(spanBottom).toExist()
   })
 
-  it('should render a <span> tag with a class name of "tagLineBottomUnderline"', () => {
-    const spanBottomUnderline = wrapper.find(`span.${tagLineBottomUnderline}`)
+  it('should render a <span> tag with a class name of "taglineBottomUnderline"', () => {
+    const spanBottomUnderline = wrapper.find(`span.${taglineBottomUnderline}`)
 
     expect(spanBottomUnderline).toExist()
   })
 
-  it("should render the top row of the TagLine text", () => {
-    expect(wrapper.text()).toContain(text.topText)
+  it("should render the top row of the Tagline ", () => {
+    expect(wrapper.text()).toContain(text.top)
   })
 
-  it("should render the bottom row of the TagLine text", () => {
-    expect(wrapper.text()).toContain(text.bottomText)
+  it("should render the bottom row of the Tagline text", () => {
+    expect(wrapper.text()).toContain(text.bottom)
   })
 })

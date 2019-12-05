@@ -3,10 +3,10 @@ import React from "react"
 import { appName } from "constants/text"
 
 import {
-  tagLine,
-  tagLineTop,
-  tagLineBottom,
-  tagLineUnderline,
+  tagline,
+  taglineTop,
+  taglineBottom,
+  taglineBottomUnderline,
 } from "./styles.module.css"
 
 export const text = {
@@ -14,12 +14,12 @@ export const text = {
   bottom: "Imperfect",
 }
 
-const TagLine = () => (
-  <h1 className={tagLine}>
-    <span className={tagLineTop}>{text.top}</span>
-    <span className={tagLineBottom}>{text.bottom}</span>
-    <span className={tagLineUnderline} />
-  </h1>
+const Tagline = () => (
+  <header className={tagline}>
+    <span className={taglineTop}>{text.top}</span>
+    <span className={taglineBottom}>{text.bottom}</span>
+    <span className={taglineBottomUnderline} />
+  </header>
 )
 
-export default TagLine
+export default Tagline

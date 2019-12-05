@@ -2,6 +2,9 @@ import React from "react"
 import { BrowserRouter } from "react-router-dom"
 import "jest-enzyme"
 
+import { appName } from "constants/text"
+import { homePage } from "./styles.module.css"
+
 import HomePage, { text } from "."
 import SEO from "components/seo"
 import Logo from "components/UI/Logo"
@@ -30,7 +33,7 @@ describe("HomePage Component", () => {
     const seoComponent = wrapper.find(SEO)
 
     expect(seoComponent).toExist()
-    expect(seoComponent.props().title).toBe(appName)
+    expect(seoComponent.props().title).toBe(text.title)
   })
 
   it("should render a Logo component", () => {
@@ -40,7 +43,7 @@ describe("HomePage Component", () => {
     expect(logoComponent.props().src).toBe(text.logoSrc)
   })
 
-  it("should render the Tagline Component", () => {
+  it("should render a Tagline Component", () => {
     const taglineComponent = wrapper.find(Tagline)
 
     expect(taglineComponent).toExist()

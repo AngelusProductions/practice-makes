@@ -1,6 +1,8 @@
 import React from "react"
 import "jest-enzyme"
 
+import { appName } from "constants/text"
+
 import PageNotFound, { text } from "../404"
 import SEO from "components/seo"
 
@@ -23,7 +25,7 @@ describe("PageNotFound Component", () => {
     const seoComponent = wrapper.find(SEO)
 
     expect(seoComponent).toExist()
-    expect(seoComponent.props().title).toBe(appName)
+    expect(seoComponent.props().title).toBe(text.title)
   })
 
   it("should render a <p> tag", () => {

@@ -12,8 +12,8 @@ const Logo = ({ src, width, history }) => {
     <img
       src={src}
       alt={appName}
+      style={{ width }}
       className={logo}
-      styles={{ width }}
       onClick={onLogoClick}
     />
   )

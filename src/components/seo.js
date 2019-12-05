@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { isSEOActive } from "constants/config"
 import { appName, appAuthor } from "constants/text"
 
 function SEO({ description, lang, meta, title }) {
