@@ -13,3 +13,8 @@ export const homePageNavItems = [
     url: blogPath,
   },
 ]
+
+export const mapMarkerIconProps = {
+  alt: "map marker",
+  src: "https://practice-makes-production.s3.amazonaws.com/map-marker-icon.png",
+}

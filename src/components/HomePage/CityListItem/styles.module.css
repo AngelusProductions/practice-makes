@@ -1,0 +1,37 @@
+.cityListItem {
+  background-size: cover;
+  display: inline-block;
+  height: 41vh;
+  width: 57vw;
+}
+.cityListItem:hover {
+  cursor: pointer;
+}
+.cityListItem:nth-child(1) {
+  margin-bottom: 0.8vh;
+}
+
+.cityListItemLabel {
+  background: white;
+  border: solid 0.2rem;
+  box-shadow: 0.66vw 1vh #222222;
+  float: right;
+  font-size: 2.4rem;
+  left: 13.6%;
+  letter-spacing: 0.75vw;
+  line-height: 4.5rem;
+  padding: 0 1rem;
+  position: relative;
+  text-transform: uppercase;
+  top: 40.4%;
+}
+.cityListItemLabel:hover {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.mapMarkerIcon {
+  height: 0.9em;
+  margin-right: 0.4em;
+  transform: translateY(0.4vh);
+}

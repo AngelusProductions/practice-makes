@@ -7,6 +7,7 @@ import SEO from "components/seo"
 import Logo from "components/UI/Logo"
 import Tagline from "../Tagline"
 import NavMenu from "components/UI/NavMenu"
+import CityList from "../CityList"
 
 export const text = {
   title: "Home Page",
@@ -20,6 +21,7 @@ const HomePage = () => (
     <Logo src={text.logoSrc} width={text.logoWidth} />
     <Tagline />
     <NavMenu items={homePageNavItems} />
+    <CityList />
   </div>
 )
 
