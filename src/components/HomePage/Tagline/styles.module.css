@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
 
-.tagLine {
+.tagline {
   position: absolute;
   top: 46%;
   width: 100%;
 }
 
-.tagLineTop {
+.taglineTop {
   font-size: 1.14rem;
   letter-spacing: 0.28px;
   position: absolute;
@@ -15,11 +15,11 @@
   left: 0.4vw;
 }
 
-.tagLineBottomWrapper {
+.taglineBottomWrapper {
   position: relative;
 }
 
-.tagLineBottom {
+.taglineBottom {
   font-family: "Nunito Sans", sans-serif;
   font-size: 6.2rem;
   font-weight: 500;
@@ -28,7 +28,7 @@
   left: 1.3vw;
 }
 
-.tagLineBottomUnderline {
+.taglineBottomUnderline {
   background: #222222;
   height: 0.5vh;
   position: absolute;

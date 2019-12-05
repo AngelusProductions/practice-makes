@@ -2,13 +2,14 @@ import React from "react"
 import { BrowserRouter } from "react-router-dom"
 import "jest-enzyme"
 
-import { appName } from "constants/text"
+import { homePageNavItems } from "constants/text"
 import { homePage } from "./styles.module.css"
 
-import HomePage from "."
+import HomePage, { text } from "."
 import SEO from "components/seo"
 import Logo from "components/UI/Logo"
 import Tagline from "../Tagline"
+import NavMenu from "components/UI/NavMenu"
 
 afterEach(cleanup)
 
@@ -47,6 +48,17 @@ describe("HomePage Component", () => {
     const taglineComponent = wrapper.find(Tagline)
 
     expect(taglineComponent).toExist()
+  })
+
+  it("should render the NavMenu component", () => {
+    const navMenuComponent = wrapper.find(NavMenu)
+
+    expect(navMenuComponent).toExist()
+    expect(navMenuComponent.props().items).toBe(homePageNavItems)
+  })
+
+  it("should pass the NavMenu component the correct items prop", () => {
+    const navMenuComponent = wrapper.find(NavMenu)
   })
 
   it('should render a <div> tag with a class name of "homePage"', () => {

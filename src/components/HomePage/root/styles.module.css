@@ -8,3 +8,7 @@
   grid-template-areas: 1fr 3fr / 3fr;
   padding: 7.3vh 3.8vw;
 }
+.homePage a {
+  color: #222222;
+  text-decoration: none;
+}

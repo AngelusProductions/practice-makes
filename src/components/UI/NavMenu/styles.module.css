@@ -1,0 +1,14 @@
+.navMenuHome {
+  align-items: center;
+  display: flex;
+  font-size: 0.55em;
+  justify-content: space-between;
+  left: 5.5vw;
+  letter-spacing: 0.28px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 89.5vh;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  width: 14.3rem;
+}

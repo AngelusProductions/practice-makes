@@ -1,10 +1,12 @@
 import React from "react"
 
+import { homePageNavItems } from "constants/text"
 import { homePage } from "./styles.module.css"
 
 import SEO from "components/seo"
 import Logo from "components/UI/Logo"
 import Tagline from "../Tagline"
+import NavMenu from "components/UI/NavMenu"
 
 export const text = {
   title: "Home Page",
@@ -17,6 +19,7 @@ const HomePage = () => (
     <SEO title={text.title} />
     <Logo src={text.logoSrc} width={text.logoWidth} />
     <Tagline />
+    <NavMenu items={homePageNavItems} />
   </div>
 )
 
