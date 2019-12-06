@@ -1,5 +1,4 @@
 export const rootPath = "/"
-export const bostonPath = "/boston"
-export const houstonPath = "/houston"
 export const blogPath = "/blog"
 export const aboutPath = "/about"
+export const cityPath = "/cities/:cityName"

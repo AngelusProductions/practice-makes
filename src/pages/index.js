@@ -1,11 +1,15 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Route } from "react-router-dom"
+
+import { rootPath, cityPath } from "constants/paths"
 
 import HomePage from "components/HomePage/root"
+import CityPage from "../components/CityPage/root"
 
 const Index = () => (
   <BrowserRouter>
-    <HomePage />
+    <Route exact path={rootPath} component={HomePage} />
+    <Route path={cityPath} component={CityPage} />
   </BrowserRouter>
 )
 
