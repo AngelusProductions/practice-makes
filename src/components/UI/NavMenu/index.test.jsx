@@ -17,10 +17,7 @@ describe("NavMenu Component", () => {
   let wrapper, props
 
   beforeEach(() => {
-    props = {
-      items: homePageNavItems,
-      location: { pathname: rootPath },
-    }
+    props = { items: homePageNavItems }
     wrapper = mount(
       <BrowserRouter>
         <NavMenu {...props} />
