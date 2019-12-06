@@ -1,4 +1,5 @@
-.navMenuHome {
+.navMenuHome,
+.navMenuCity {
   align-items: center;
   display: flex;
   font-size: 0.55em;

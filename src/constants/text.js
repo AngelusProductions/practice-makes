@@ -16,5 +16,6 @@ export const homePageNavItems = [
 
 export const mapMarkerIconProps = {
   alt: "map marker",
-  src: "https://practice-makes-production.s3.amazonaws.com/map-marker-icon.png",
+  src:
+    "https://practice-makes-production.s3.amazonaws.com/UI/map-marker-icon.png",
 }

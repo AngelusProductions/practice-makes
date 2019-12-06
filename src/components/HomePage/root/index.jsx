@@ -12,7 +12,8 @@ import CityList from "../CityList"
 export const text = {
   title: "Home Page",
   logoWidth: "9.7vw",
-  logoSrc: "https://practice-makes-production.s3.amazonaws.com/logo-home.png",
+  logoSrc:
+    "https://practice-makes-production.s3.amazonaws.com/UI/logo-home.png",
 }
 
 const HomePage = () => (
