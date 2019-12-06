@@ -13,7 +13,7 @@ describe("Index Component", () => {
   beforeEach(() => {
     wrapper = mount(
       <BrowserRouter>
-        <Index />{" "}
+        <Index />
       </BrowserRouter>
     )
   })
