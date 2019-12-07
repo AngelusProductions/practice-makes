@@ -1,5 +1,7 @@
 import React from "react"
 
-const CityPage = () => <div>hello</div>
+import { cities } from "constants/data"
+
+const CityPage = () => <div>{cities[0].events.map(event => <img src={event.photoUrl})}</div>
 
 export default CityPage

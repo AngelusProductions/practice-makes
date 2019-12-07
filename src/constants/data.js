@@ -15,8 +15,10 @@ export const cities = [
         details: "",
         date: new Date(2020, 7, 15),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
+        linkUrl:
           "https://www.eventbrite.com/e/practice-makes-empowerment-co-hosted-with-ladies-that-ux-tickets-65596343429#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-empowerment.png",
       },
       {
         name: "Process",
@@ -27,8 +29,10 @@ export const cities = [
           "Let’s set aside that final_seriously_this_time_FINAL folder and explore the experiences that get us to the “Final”. We’re talking about the good stuff: Inspiration, iteration, testing and feedback, creative havens of time and space, the ups and downs of trial and error—let’s celebrate the beauty and joy (some may use other words) of what we do. We’ll see you there!",
         date: new Date(2019, 5, 6),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
+        linkUrl:
           "https://www.eventbrite.com/e/practice-makes-process-a-design-meetup-tickets-61232663545#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-process.png",
       },
       {
         name: "Empathy",
@@ -39,8 +43,10 @@ export const cities = [
           "We're obsessed with how our customers behave and modern behavioral research has shown that emotions drive our decisions. Let's talk about how to manage that as a product designer, developer or manager!",
         date: new Date(2020, 3, 4),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
+        linkUrl:
           "https://www.eventbrite.com/e/practice-makes-empathy-tickets-57835793415#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-humans.png",
       },
       {
         name: "Identity",
@@ -51,8 +57,10 @@ export const cities = [
           "Join us at Practice Makes: Identity as we explore how our backgrounds shape our perspectives as creators, the importance of being considerate in designing for the identities of our users, and the impact that our work can have on helping others understand and redefine their sense of self.",
         date: new Date(2018, 11, 6),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
+        linkUrl:
           "https://www.eventbrite.com/e/practice-makes-identity-tickets-51754936408#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-identity.png",
       },
       {
         name: "Tricks & Treats",
@@ -63,8 +71,10 @@ export const cities = [
           "At “Practice Makes: Tricks and Treats”, learn about the dangers and counterattacks to Dark UX, inventing new paradigms in an augmented reality hide and seek game, and creating other worlds in Live Action Role Playing game design.\n\nFood and drinks will be provided!",
         date: new Date(2018, 9, 24),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
+        linkUrl:
           "https://www.eventbrite.com/e/practice-makes-tricks-and-treats-tickets-50937894614#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-tricks-&-treats.png",
       },
       {
         name: "Imperfect",
@@ -75,20 +85,24 @@ export const cities = [
           'Join us for our Series Kickoff "Practice Makes: Imperfect" at Intrepid! Designers and Developers will explore how to transform imperfect moments into magic moments on our projects and day-to-day interactions.\n\nCome hungry and early — free food and drinks will be provided!',
         date: new Date(2018, 4, 3),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
-          "https://www.eventbrite.com/e/practice-makes-imperfect-tickets-44966436823",
+        linkUrl:
+          "https://www.eventbrite.com/e/practice-makes-imperfect-tickets-44966436823#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-imperfect.png",
       },
       {
         name: "Humans",
-        subtitle: "The technology / user divide",
+        subtitle: "Bridging the gap between ",
         description:
           "Emerging technologies not only augment our experiences as human beings, but have also begun to redefine our understanding of what it means to be a human. Through the deliberate use of tone, language, and image, we infuse human elements into digital products in order to cross the barriers between technology and user, in order to better understand one another and to better understand ourselves.",
         details:
           "Join us at “Practice Makes: Humans” to explore projects that leverage emerging technologies and empathetic design, including a self-assessment tool that helps improve runners’ forms by leveraging a phone’s unique capabilities and a robot with human-like characteristics and personality.\n\nFood and drinks will be provided!",
         date: new Date(2018, 6, 11),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
-        url:
+        linkUrl:
           "https://www.eventbrite.com/e/practice-makes-humans-tickets-46918559675#",
+        photoUrl:
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-humans.png",
       },
     ],
     team: [
@@ -170,13 +184,19 @@ export const cities = [
         waves:
           "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-skyline-waves.png",
       },
+      about: {
+        top:
+          "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-about-top.png",
+        bottom:
+          "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-about-bottom.png",
+      },
     },
   },
   {
     name: "Houston",
     linkUrl: "/cities/houston",
     photoUrl:
-      "https://practice-makes-production.s3.amazonaws.com/houston-main.png",
+      "https://practice-makes-production.s3.amazonaws.com/houston/assets/houston-main.png",
     about: null,
     events: [],
     team: [],
