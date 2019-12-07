@@ -1,7 +1,22 @@
 import React from "react"
+import { withRouter } from "react-router-dom"
 
 import { cities } from "constants/data"
+import { cityPage } from "./styles.module.css"
 
-const CityPage = () => <div>{cities[0].events.map(event => <img src={event.photoUrl})}</div>
+import Welcome from "../Welcome"
 
-export default CityPage
+const CityPage = ({
+  match: {
+    params: { cityName },
+  },
+}) => {
+  const city = cities.find(city => city.name.toLowerCase() === cityName)
+  return (
+    <main className={cityPage}>
+      <Welcome {...city} />
+    </main>
+  )
+}
+
+export default withRouter(CityPage)

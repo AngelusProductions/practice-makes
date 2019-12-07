@@ -4,12 +4,25 @@
   display: flex;
   font-size: 0.55em;
   justify-content: space-between;
-  left: 5.5vw;
   letter-spacing: 0.28px;
   position: absolute;
   text-transform: uppercase;
-  top: 89.5vh;
   transform: rotate(-90deg);
   transform-origin: left;
+}
+
+.navMenuHome {
+  left: 5.5vw;
+  top: 89.5vh;
   width: 14.3rem;
+}
+
+.navMenuCity {
+  top: 56.6rem;
+  left: 5rem;
+  width: 48rem;
+}
+.navMenuCity > a:nth-child(1),
+.navMenuCity > div:nth-child(2) {
+  visibility: hidden;
 }

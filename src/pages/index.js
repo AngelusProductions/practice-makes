@@ -2,6 +2,7 @@ import React from "react"
 import { BrowserRouter, Route } from "react-router-dom"
 
 import { rootPath, cityPath } from "constants/paths"
+import "./styles.module.css"
 
 import HomePage from "components/HomePage/root"
 import CityPage from "../components/CityPage/root"

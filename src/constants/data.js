@@ -3,7 +3,7 @@ export const cities = [
     name: "Boston",
     linkUrl: "/cities/boston",
     photoUrl:
-      "https://practice-makes-production.s3.amazonaws.com/boston-main.png",
+      "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-main.png",
     about:
       "Intrepid is a fully integrated digital product creation studio within Accenture, that focuses on mobile apps, websites, connected devices and IoT experiences; headquartered in Cambridge, MA. At 180+ and growing, our designers, developers, product strategists, project managers and more, spin their chairs around to collaborate on cross functional team endeavors.",
     events: [
@@ -178,7 +178,7 @@ export const cities = [
         "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-alt.png",
       skyline: {
         top:
-          "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-skyline-top.png",
+          "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-skyline-top.png?versionId=null",
         bottom:
           "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-skyline-bottom.png",
         waves:

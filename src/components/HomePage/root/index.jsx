@@ -11,19 +11,19 @@ import CityList from "../CityList"
 
 export const text = {
   title: "Home Page",
-  logoWidth: "9.7vw",
+  logoWidth: "10rem",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-home.png",
 }
 
 const HomePage = () => (
-  <div className={homePage}>
+  <main className={homePage}>
     <SEO title={text.title} />
     <Logo src={text.logoSrc} width={text.logoWidth} />
     <Tagline />
     <NavMenu items={homePageNavItems} />
     <CityList />
-  </div>
+  </main>
 )
 
 export default HomePage
