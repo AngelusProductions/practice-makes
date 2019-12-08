@@ -10,7 +10,7 @@ import {
 export const text = {
   regex: /^[a-zA-Z]+$/g,
   whiteWidthOffset: 0.5,
-  whiteHeightOffset: 0.7,
+  whiteHeightOffset: 0.5,
   whiteTopOffset: 0.7,
   blackTopWidthOffset: 1,
 }
