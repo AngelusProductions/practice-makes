@@ -7,7 +7,7 @@ import Logo from "components/UI/Logo"
 import NavMenu from "components/UI/NavMenu"
 
 export const text = {
-  header: "Welcome too",
+  header: "Welcome to",
   logoWidth: "6rem",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
