@@ -18,7 +18,15 @@ export const text = {
 export const toRem = (property, offset) =>
   `${parseFloat(property.replace(text.regex, "")) - offset}rem`
 
-const Card = ({ src, alt, width, height, marginTop, isHoverable, details }) => {
+const Card = ({
+  photoUrl,
+  alt,
+  width,
+  height,
+  marginTop,
+  isHoverable,
+  details,
+}) => {
   const [isHovering, setIsHovering] = useState(false)
   const contentStyles = { width, height, marginTop }
 
@@ -37,7 +45,7 @@ const Card = ({ src, alt, width, height, marginTop, isHoverable, details }) => {
           {details}
         </p>
       ) : (
-        <img src={src} alt={alt} className={card} style={contentStyles} />
+        <img src={photoUrl} alt={alt} className={card} style={contentStyles} />
       )}
       <div
         className={borderWhite}
