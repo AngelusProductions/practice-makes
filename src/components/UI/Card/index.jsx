@@ -1,23 +1,57 @@
 import React, { useState } from "react"
 
-import { card, details } from "./styles.module.css"
+import {
+  card,
+  detailsClass,
+  borderWhite,
+  borderBlack,
+} from "./styles.module.css"
 
-const Card = ({ src, height, width, borderColor, details }) => {
-  const [isHovering, toggleIsHovering] = useState(false)
-  const onHover = () => toggleIsHovering(!isHovering)
-  const oncardClick = () => history.push(rootPath)
-  const className = pathname === rootPath ? cardHome : cardCity
-  return isHovering ? (
-    <p className={details}>{details}</p>
-  ) : (
-    <img
-      src={src}
-      alt={appName}
-      style={{ height, width, borderColor }}
+export const text = {
+  regex: /^[a-zA-Z]+$/g,
+  whiteWidthOffset: 0.5,
+  whiteHeightOffset: 0.7,
+  whiteTopOffset: 0.7,
+  blackTopWidthOffset: 1,
+}
+
+export const toRem = (property, offset) =>
+  `${parseFloat(property.replace(text.regex, "")) - offset}rem`
+
+const Card = ({ src, alt, width, height, marginTop, isHoverable, details }) => {
+  const [isHovering, setIsHovering] = useState(false)
+  const contentStyles = { width, height, marginTop }
+
+  const borderWhiteWidth = toRem(width, text.whiteWidthOffset)
+  const borderWhiteHeight = toRem(height, text.whiteHeightOffset)
+  const borderWhiteTop = toRem(marginTop, text.whiteTopOffset)
+  const borderBlackTop = toRem(marginTop, text.blackTopWidthOffset)
+  return (
+    <div
       className={card}
-      onHover={onHover}
-      onClick={oncardClick}
-    />
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      {isHoverable && isHovering ? (
+        <p className={detailsClass} style={contentStyles}>
+          {details}
+        </p>
+      ) : (
+        <img src={src} alt={alt} className={card} style={contentStyles} />
+      )}
+      <div
+        className={borderWhite}
+        style={{
+          width: borderWhiteWidth,
+          height: borderWhiteHeight,
+          top: borderWhiteTop,
+        }}
+      />
+      <div
+        className={borderBlack}
+        style={{ width, height, top: borderBlackTop }}
+      />
+    </div>
   )
 }
 

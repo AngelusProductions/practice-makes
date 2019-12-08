@@ -1,25 +1,47 @@
 import React from "react"
 
-import { cityPageHashItems } from "constants/text"
-import { welcome, welcomeHeader, cityscapeTop } from "./styles.module.css"
+import { events, eventsHeader } from "./styles.module.css"
 
-import Logo from "components/UI/Logo"
-import NavMenu from "components/UI/NavMenu"
+import Card from "components/UI/Card"
 
 export const text = {
   header: "Upcoming Event",
-  logoWidth: "6rem",
+  eventName: "Empowerment",
+  cardWidth: "23rem",
+  cardHeight: "28rem",
+  cardMarginTop: "5rem",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
 }
 
-const Welcome = ({ name, assets }) => (
-  <main className={welcome}>
-    <span className={welcomeHeader}>{text.header}</span>
-    <img className={cityscapeTop} src={assets.skyline.top} alt={name} />
-    <Logo src={text.logoSrc} width={text.logoWidth} />
-    <NavMenu items={cityPageHashItems} />
-  </main>
+const Events = ({ events }) => {
+  const {
+    eventName,
+    cardWidth: width,
+    cardHeight: height,
+    cardMarginTop: marginTop,
+  } = text
+  const upcomingEvent = events.find(event => event.name === eventName)
+
+  const baseProps = {
+    cardProps: {
+      width,
+      height,
+      marginTop,
+      isHoverable: false,
+      src: upcomingEvent.photoUrl,
+      alt: upcomingEvent.name,
+    },
+  }
+
+  return <BaseEvents {...baseProps} />
+}
+
+const BaseEvents = ({ cardProps }) => (
+  <section className={events}>
+    <span className={eventsHeader}>{text.header}</span>
+    <Card {...cardProps} />
+  </section>
 )
 
-export default Welcome
+export default Events

@@ -12,7 +12,8 @@ export const cities = [
         subtitle: "Empowerment with Ladies that UX",
         description:
           "We all face adversity in our jobs and our everyday lives. Sometimes all we can do is shake our fists in and hope that it will get better. It's times when we gather and share our stories and experiences that we can empower ourselves and each other. Let us do just that, as we share food, drink, and conversation. Join us the evening of August 15th to hear from our lineup of speakers talk about how they have empowered themselves and others in the design field! ",
-        details: "",
+        details:
+          "All are welcome to this event regardless of how they identify.\n\nCan’t make it anymore? No problem! Just be sure to update your RSVP so someone else can take your spot.",
         date: new Date(2020, 7, 15),
         address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
         linkUrl:

@@ -1,0 +1,15 @@
+.events {
+  display: grid;
+  font-family: "Space Mono";
+  font-size: 2rem;
+  grid-template: 1fr 4fr / 2fr 4fr 10fr;
+  height: 100vh;
+}
+
+.eventsHeader {
+  align-self: self-end;
+  font-size: 4rem;
+  grid-area: 1 / 2 / 1 / -1;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}

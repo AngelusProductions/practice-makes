@@ -14,12 +14,12 @@ export const text = {
 }
 
 const Welcome = ({ name, assets }) => (
-  <main className={welcome}>
+  <section className={welcome}>
     <Logo src={text.logoSrc} width={text.logoWidth} />
     <NavMenu items={cityPageHashItems} />
     <span className={welcomeHeader}>{text.header}</span>
     <img className={cityscapeTop} src={assets.skyline.top} alt={name} />
-  </main>
+  </section>
 )
 
 export default Welcome

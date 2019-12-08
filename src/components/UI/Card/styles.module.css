@@ -1,0 +1,21 @@
+.card {
+  grid-area: 2/2/2/2;
+  position: relative;
+}
+
+.borderWhite,
+.borderBlack {
+  position: absolute;
+}
+
+.borderWhite {
+  background-color: white;
+  left: 1.25rem;
+  z-index: -1;
+}
+
+.borderBlack {
+  background-color: black;
+  left: 1rem;
+  z-index: -2;
+}
