@@ -8,7 +8,7 @@
 
 .eventsHeader {
   align-self: self-end;
-  font-size: 4rem;
+  font-size: 3rem;
   grid-area: 1 / 2 / 1 / -1;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -33,6 +33,12 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  margin-top: 2rem;
+  margin: 2rem 0;
   width: 79%;
+}
+
+.eventInfoDate {
+  font-size: 14px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
 }

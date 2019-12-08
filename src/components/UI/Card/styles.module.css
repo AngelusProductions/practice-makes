@@ -15,7 +15,7 @@
 }
 
 .borderBlack {
-  background-color: black;
+  background-color: #222222;
   left: 1rem;
   z-index: -2;
 }
