@@ -1,0 +1,26 @@
+.hashMenu {
+  position: absolute;
+  top: 73vh;
+  left: 1rem;
+}
+
+.hashItem,
+.hashMarker {
+  display: block;
+  background: #222222;
+  margin-bottom: 1rem;
+}
+
+.hashItem {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  letter-spacing: 4.5px;
+}
+
+.hashMarker {
+  width: 0.2vw;
+  height: 2.5rem;
+}

@@ -1,12 +1,4 @@
-import {
-  blogPath,
-  aboutPath,
-  welcomeHash,
-  eventsHash,
-  archivesHash,
-  aboutHash,
-  contactHash,
-} from "./paths"
+import { blogPath, aboutPath } from "./paths"
 
 export const appName = "Practice Makes"
 export const appAuthor = "Intrepid"
@@ -25,23 +17,23 @@ export const homePageNavItems = [
 export const cityPageHashItems = [
   {
     name: "Welcome",
-    url: welcomeHash,
+    url: "welcome",
   },
   {
     name: "Contact",
-    url: contactHash,
+    url: "contact",
   },
   {
     name: "About",
-    url: aboutHash,
+    url: "about",
   },
   {
     name: "Archives",
-    url: archivesHash,
+    url: "archives",
   },
   {
-    name: "Events & Tickets",
-    url: eventsHash,
+    name: "Events",
+    url: "events",
   },
 ]
 

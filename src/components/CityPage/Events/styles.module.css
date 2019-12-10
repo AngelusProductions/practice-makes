@@ -2,13 +2,14 @@
   display: grid;
   font-family: "Space Mono";
   font-size: 2rem;
-  grid-template: 1fr 4fr / 2fr 4fr 10fr;
+  grid-template: 1fr 4.5fr / 1.2fr 4fr 10fr;
   height: 100vh;
+  position: relative;
 }
 
 .eventsHeader {
   align-self: self-end;
-  font-size: 3rem;
+  font-size: 3.4rem;
   grid-area: 1 / 2 / 1 / -1;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -17,7 +18,7 @@
 .eventInfo {
   grid-area: 2 / 3 / -1 / -1;
   margin-top: 5rem;
-  padding: 0 10%;
+  padding: 0 15%;
   text-align: left;
 }
 
@@ -27,18 +28,51 @@
   text-transform: uppercase;
 }
 
-.eventInfoDescription {
-  display: block;
+.eventInfoDescription,
+.eventInfoAddress {
   font-family: Poppins;
-  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.eventInfoDescription {
+  display: block;
+  font-size: 16px;
   margin: 2rem 0;
-  width: 79%;
+  width: 84%;
 }
 
 .eventInfoDate {
   font-size: 14px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
+}
+
+.eventInfoAddress {
+  font-size: 1rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.eventInfoTickets {
+  border: solid 4px #222222;
+  box-shadow: 0.6rem 0.6rem #222222;
+  color: #222222;
+  display: block;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 4.5px;
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 11rem;
+}
+.eventInfoTickets:hover {
+  background-color: #222222;
+  box-shadow: none;
+  color: white;
+}
+.eventInfoTickets:active {
+  transform: scale(0.95);
 }

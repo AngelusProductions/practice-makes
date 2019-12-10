@@ -15,7 +15,8 @@ export const cities = [
         details:
           "All are welcome to this event regardless of how they identify.\n\nCan’t make it anymore? No problem! Just be sure to update your RSVP so someone else can take your spot.",
         date: new Date(2020, 7, 15),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-empowerment-co-hosted-with-ladies-that-ux-tickets-65596343429#",
         photoUrl:
@@ -29,7 +30,8 @@ export const cities = [
         details:
           "Let’s set aside that final_seriously_this_time_FINAL folder and explore the experiences that get us to the “Final”. We’re talking about the good stuff: Inspiration, iteration, testing and feedback, creative havens of time and space, the ups and downs of trial and error—let’s celebrate the beauty and joy (some may use other words) of what we do. We’ll see you there!",
         date: new Date(2019, 5, 6),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-process-a-design-meetup-tickets-61232663545#",
         photoUrl:
@@ -43,7 +45,8 @@ export const cities = [
         details:
           "We're obsessed with how our customers behave and modern behavioral research has shown that emotions drive our decisions. Let's talk about how to manage that as a product designer, developer or manager!",
         date: new Date(2020, 3, 4),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-empathy-tickets-57835793415#",
         photoUrl:
@@ -57,7 +60,8 @@ export const cities = [
         details:
           "Join us at Practice Makes: Identity as we explore how our backgrounds shape our perspectives as creators, the importance of being considerate in designing for the identities of our users, and the impact that our work can have on helping others understand and redefine their sense of self.",
         date: new Date(2018, 11, 6),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-identity-tickets-51754936408#",
         photoUrl:
@@ -71,7 +75,8 @@ export const cities = [
         details:
           "At “Practice Makes: Tricks and Treats”, learn about the dangers and counterattacks to Dark UX, inventing new paradigms in an augmented reality hide and seek game, and creating other worlds in Live Action Role Playing game design.\n\nFood and drinks will be provided!",
         date: new Date(2018, 9, 24),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-tricks-and-treats-tickets-50937894614#",
         photoUrl:
@@ -85,7 +90,8 @@ export const cities = [
         details:
           'Join us for our Series Kickoff "Practice Makes: Imperfect" at Intrepid! Designers and Developers will explore how to transform imperfect moments into magic moments on our projects and day-to-day interactions.\n\nCome hungry and early — free food and drinks will be provided!',
         date: new Date(2018, 4, 3),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-imperfect-tickets-44966436823#",
         photoUrl:
@@ -99,7 +105,8 @@ export const cities = [
         details:
           "Join us at “Practice Makes: Humans” to explore projects that leverage emerging technologies and empathetic design, including a self-assessment tool that helps improve runners’ forms by leveraging a phone’s unique capabilities and a robot with human-like characteristics and personality.\n\nFood and drinks will be provided!",
         date: new Date(2018, 6, 11),
-        address: "+222 3rd St. Suite 4000, Cambridge, MA 02142",
+        addressTop: "+222 3rd St. Suite 4000",
+        addressBottom: "Cambridge, MA 02142",
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-humans-tickets-46918559675#",
         photoUrl:

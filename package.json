@@ -18,7 +18,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2"
   },
   "devDependencies": {
     "@testing-library/react": "^9.3.2",
@@ -27,8 +28,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-enzyme": "^7.1.2",
-    "prettier": "^1.19.1",
-    "heroku-postbuild": "gatsby build"
+    "prettier": "^1.19.1"
   },
   "keywords": [
     "gatsby"

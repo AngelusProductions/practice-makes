@@ -14,5 +14,5 @@ export const getSuffix = date => {
   }
 }
 
-export const toShortString = date =>
+export const toShortDate = date =>
   moment.months()[date.getMonth()] + " " + date.getDate() + getSuffix(date)
