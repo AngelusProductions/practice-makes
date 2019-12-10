@@ -3,6 +3,8 @@ import { withRouter } from "react-router-dom"
 
 import { hashMenu, hashItem, hashMarker } from "./styles.module.css"
 
+import HashMenuItem from "../HashMenuItem"
+
 export const text = {
   eventsAndTickets: "Events & Tickets",
 }
@@ -16,15 +18,9 @@ const HashMenu = ({ items, sectionTitle }) => {
   hashItems.reverse()
   return (
     <nav className={hashMenu}>
-      {hashItems.map(item => {
-        return item.name === sectionTitle ? (
-          <span className={hashItem} key={item.name}>
-            {item.name}
-          </span>
-        ) : (
-          <span className={hashMarker} key={item.name} />
-        )
-      })}
+      {hashItems.map(item => (
+        <HashMenuItem item={item} sectionTitle={sectionTitle} key={item.name} />
+      ))}
     </nav>
   )
 }
