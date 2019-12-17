@@ -3,7 +3,7 @@
   font-family: "Space Mono";
   font-size: 2rem;
   grid-template: 1fr 4.5fr / 1.2fr 4fr 10fr;
-  height: 100vh;
+  height: 63rem;
   position: relative;
 }
 
@@ -17,7 +17,6 @@
 
 .eventInfo {
   grid-area: 2 / 3 / -1 / -1;
-  margin-top: 5rem;
   padding: 0 15%;
   text-align: left;
 }

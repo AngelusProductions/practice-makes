@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom"
 
 import { hashItem, hashMarker } from "./styles.module.css"
 
-const HashMenuItem = ({ item, sectionTitle }) => {
+const HashItem = ({ item, sectionTitle }) => {
   const [isHovering, setIsHovering] = useState(false)
   return isHovering || item.name === sectionTitle ? (
     <span
@@ -24,4 +24,4 @@ const HashMenuItem = ({ item, sectionTitle }) => {
   )
 }
 
-export default withRouter(HashMenuItem)
+export default withRouter(HashItem)

@@ -28,6 +28,7 @@ const Card = ({
   details,
 }) => {
   const [isHovering, setIsHovering] = useState(false)
+  const showHoverState = isHoverable && isHovering && details
   const contentStyles = { width, height, marginTop }
 
   const borderWhiteWidth = toRem(width, text.whiteWidthOffset)
@@ -40,7 +41,7 @@ const Card = ({
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      {isHoverable && isHovering ? (
+      {showHoverState ? (
         <p className={detailsClass} style={contentStyles}>
           {details}
         </p>

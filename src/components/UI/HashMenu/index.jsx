@@ -1,9 +1,9 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
 
-import { hashMenu, hashItem, hashMarker } from "./styles.module.css"
+import { hashMenu } from "./styles.module.css"
 
-import HashMenuItem from "../HashMenuItem"
+import HashMenuItem from "../HashItem"
 
 export const text = {
   eventsAndTickets: "Events & Tickets",

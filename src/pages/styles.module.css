@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300&display=swap");
 body {
   color: #222222;
+  font-family: "Space Mono";
   margin: 0;
   padding: 0;
 }

@@ -6,6 +6,7 @@ import { cityPage } from "./styles.module.css"
 
 import Welcome from "../Welcome"
 import Events from "../Events"
+import ComingSoon from "../ComingSoon"
 
 const CityPage = ({
   match: {
@@ -17,6 +18,7 @@ const CityPage = ({
     <main className={cityPage}>
       <Welcome {...city} />
       <Events {...city} />
+      <ComingSoon />
     </main>
   )
 }

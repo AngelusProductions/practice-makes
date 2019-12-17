@@ -1,0 +1,80 @@
+.comingSoon {
+  background-color: #222222;
+  display: grid;
+  color: white;
+  height: 37vh;
+  grid-template-columns: 1fr 2.2fr;
+  position: relative;
+  width: 100vw;
+}
+
+.comingSoon .comingSoonTitle,
+.comingSoonHeader {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.comingSoonTitle {
+  color: #222222;
+  font-size: 3.3rem;
+  letter-spacing: 20px;
+  background: white;
+  width: 35vw;
+  padding: 0rem 0.7rem;
+  text-align: center;
+  left: 8vw;
+  position: absolute;
+  top: -7vh;
+  border: solid 4px #222222;
+}
+
+.comingSoonHeader,
+.comingSoonBody {
+  grid-column: 2;
+}
+
+.comingSoonHeader {
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  margin: 0;
+  display: flex;
+  align-self: self-end;
+}
+
+.comingSoonBody {
+  font-family: Poppins;
+  width: 34vw;
+}
+
+.questionMark,
+.questionMarkBorderFront,
+.questionMarkBorderBack {
+  position: absolute;
+  height: 35vh;
+  width: 15vw;
+}
+
+.questionMark {
+  z-index: 3;
+  position: absolute;
+  width: 5vw;
+  top: 21vh;
+  left: 14vw;
+  height: 11vh;
+}
+
+.questionMarkBorderFront {
+  border: solid 2px white;
+  background-color: #222222;
+  top: 9vh;
+  left: 9vw;
+  z-index: 2;
+}
+
+.questionMarkBorderBack {
+  border: solid 4px white;
+  background-color: #222222;
+  top: 7vh;
+  left: 10.3vw;
+  z-index: 1;
+}

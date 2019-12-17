@@ -14,7 +14,7 @@ import {
 } from "./styles.module.css"
 
 import Card from "components/UI/Card"
-import HashMenu from "../HashMenu"
+import HashMenu from "components/UI/HashMenu"
 
 export const text = {
   title: "Events",
@@ -24,6 +24,7 @@ export const text = {
   cardWidth: "29rem",
   cardHeight: "36.8rem",
   cardMarginTop: "5rem",
+  borderColor: "#222222",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
 }
