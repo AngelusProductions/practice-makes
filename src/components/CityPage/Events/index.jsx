@@ -1,17 +1,8 @@
 import React from "react"
+import * as s from "./styles.module.css"
 
 import { cityPageHashItems } from "constants/text"
 import { toShortDate } from "constants/utils"
-import {
-  events,
-  eventsHeader,
-  eventInfo,
-  eventInfoSubtitle,
-  eventInfoDescription,
-  eventInfoDate,
-  eventInfoAddress,
-  eventInfoTickets,
-} from "./styles.module.css"
 
 import Card from "components/UI/Card"
 import HashMenu from "components/UI/HashMenu"
@@ -24,27 +15,19 @@ export const text = {
   cardWidth: "29rem",
   cardHeight: "36.8rem",
   cardMarginTop: "5rem",
-  borderColor: "#222222",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
 }
 
 const Events = ({ events }) => {
-  const {
-    upcomingEventName,
-    cardWidth: width,
-    cardHeight: height,
-    cardMarginTop: marginTop,
-  } = text
-
-  const upcomingEvent = events.find(event => event.name === upcomingEventName),
-    { name, date, photoUrl } = upcomingEvent
+  const upcomingEvent = events.find(e => e.name === text.upcomingEventName),
+    { photoUrl, name, date } = upcomingEvent
 
   const baseProps = {
     cardProps: {
-      width,
-      height,
-      marginTop,
+      width: text.cardWidth,
+      height: text.cardHeight,
+      marginTop: text.cardMarginTop,
       photoUrl,
       alt: name,
       isHoverable: false,
@@ -65,19 +48,19 @@ const BaseEvents = ({
   linkUrl,
   dateText,
 }) => (
-  <section id={text.title} className={events}>
-    <span className={eventsHeader}>{text.header}</span>
+  <section id={text.title} className={s.events}>
+    <h1 className={s.eventsHeader}>{text.header}</h1>
     <Card {...cardProps} />
-    <div className={eventInfo} style={{ marginTop: cardProps.marginTop }}>
-      <span className={eventInfoSubtitle}>{subtitle}</span>
-      <span className={eventInfoDescription}>{description}</span>
-      <span className={eventInfoDate}>{dateText}</span>
-      <span className={eventInfoAddress}>
+    <div className={s.eventInfo} style={{ marginTop: cardProps.marginTop }}>
+      <h2 className={s.eventInfoSubtitle}>{subtitle}</h2>
+      <p className={s.eventInfoDescription}>{description}</p>
+      <p className={s.eventInfoDate}>{dateText}</p>
+      <span className={s.eventInfoAddress}>
         {addressTop},
         <br />
         {addressBottom}
       </span>
-      <a href={linkUrl} className={eventInfoTickets}>
+      <a href={linkUrl} className={s.eventInfoTickets}>
         {text.getTickets}
       </a>
     </div>

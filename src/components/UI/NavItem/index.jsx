@@ -1,9 +1,9 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
 import { HashLink as Link } from "react-router-hash-link"
+import * as s from "./styles.module.css"
 
 import { rootPath } from "constants/paths"
-import { navItem, dashIcon } from "./styles.module.css"
 
 export const text = {
   black: "#222222",
@@ -17,11 +17,11 @@ const NavItem = ({ name, url, isNotLastItem, location: { pathname } }) => {
   const width = pathname === rootPath ? text.short : text.tall
   return (
     <>
-      <Link to={url} key={name} className={navItem}>
+      <Link to={url} key={name} className={s.navItem}>
         {name}
       </Link>
       {isNotLastItem && (
-        <div className={dashIcon} style={{ backgroundColor, width }} />
+        <div className={s.dashIcon} style={{ backgroundColor, width }} />
       )}
     </>
   )

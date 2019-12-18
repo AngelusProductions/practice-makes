@@ -16,3 +16,5 @@ export const getSuffix = date => {
 
 export const toShortDate = date =>
   moment.months()[date.getMonth()] + " " + date.getDate() + getSuffix(date)
+
+export const toLongDate = date => toShortDate(date) + " " + date.getFullYear()

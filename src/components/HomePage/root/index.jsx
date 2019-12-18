@@ -1,7 +1,7 @@
 import React from "react"
+import * as s from "./styles.module.css"
 
 import { homePageNavItems } from "constants/text"
-import { homePage } from "./styles.module.css"
 
 import SEO from "components/seo"
 import Logo from "components/UI/Logo"
@@ -17,7 +17,7 @@ export const text = {
 }
 
 const HomePage = () => (
-  <main className={homePage}>
+  <main className={s.homePage}>
     <SEO title={text.title} />
     <Logo src={text.logoSrc} width={text.logoWidth} />
     <Tagline />

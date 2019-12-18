@@ -1,24 +1,17 @@
 import React from "react"
+import * as s from "./styles.module.css"
 
 import { appName } from "constants/text"
 
-import {
-  tagline,
-  taglineTop,
-  taglineBottom,
-  taglineBottomUnderline,
-} from "./styles.module.css"
-
 export const text = {
-  top: appName,
   bottom: "Imperfect",
 }
 
 const Tagline = () => (
-  <header className={tagline}>
-    <span className={taglineTop}>{text.top}</span>
-    <span className={taglineBottom}>{text.bottom}</span>
-    <span className={taglineBottomUnderline} />
+  <header className={s.tagline}>
+    <span className={s.taglineTop}>{appName}</span>
+    <span className={s.taglineBottom}>{text.bottom}</span>
+    <span className={s.taglineBottomUnderline} />
   </header>
 )
 

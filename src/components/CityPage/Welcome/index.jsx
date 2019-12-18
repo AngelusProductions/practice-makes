@@ -1,7 +1,7 @@
 import React from "react"
+import * as s from "./styles.module.css"
 
 import { cityPageHashItems } from "constants/text"
-import { welcome, welcomeHeader, cityscapeTop } from "./styles.module.css"
 
 import Logo from "components/UI/Logo"
 import NavMenu from "components/UI/NavMenu"
@@ -22,11 +22,11 @@ const Welcome = ({ name, assets }) => {
     return item
   })
   return (
-    <section id={text.title} className={welcome}>
+    <section id={text.title} className={s.welcome}>
       <Logo src={text.logoSrc} width={text.logoWidth} />
       <NavMenu items={hashItems} />
-      <span className={welcomeHeader}>{text.header}</span>
-      <img className={cityscapeTop} src={assets.skyline.top} alt={name} />
+      <span className={s.welcomeHeader}>{text.header}</span>
+      <img className={s.cityscapeTop} src={assets.skyline.top} alt={name} />
     </section>
   )
 }

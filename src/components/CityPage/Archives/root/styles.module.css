@@ -1,0 +1,14 @@
+.archives {
+  display: grid;
+  font-size: 2rem;
+  grid-template-columns: 1fr 9fr;
+  position: relative;
+}
+
+.archivesHeader {
+  align-self: self-end;
+  font-size: 3.4rem;
+  grid-area: 1 / 2 / 1 / -1;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}

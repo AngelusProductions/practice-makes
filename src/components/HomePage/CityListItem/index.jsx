@@ -1,27 +1,23 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
+import * as s from "./styles.module.css"
 
 import { mapMarkerIconProps } from "constants/text"
-import {
-  cityListItem,
-  cityListItemLabel,
-  mapMarkerIcon,
-} from "./styles.module.css"
 
 const CityListItem = ({ name, linkUrl, photoUrl, history }) => {
   const onCityListItemClick = () => history.push(linkUrl)
   const backgroundImage = `url(${photoUrl})`
   return (
     <li
-      className={cityListItem}
+      className={s.cityListItem}
       onClick={onCityListItemClick}
       style={{ backgroundImage }}
     >
-      <label className={cityListItemLabel}>
+      <label className={s.cityListItemLabel}>
         <img
           src={mapMarkerIconProps.src}
           alt={mapMarkerIconProps.alt}
-          className={mapMarkerIcon}
+          className={s.mapMarkerIcon}
         />
         {name}
       </label>

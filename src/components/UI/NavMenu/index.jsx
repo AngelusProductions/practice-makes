@@ -1,13 +1,14 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
+import * as s from "./styles.module.css"
 
 import { rootPath } from "constants/paths"
-import { navMenuHome, navMenuCity } from "./styles.module.css"
 
 import NavItem from "../NavItem"
 
 const NavMenu = ({ items, location }) => {
-  const className = location.pathname === rootPath ? navMenuHome : navMenuCity
+  const className =
+    location.pathname === rootPath ? s.navMenuHome : s.navMenuCity
   return (
     <nav className={className}>
       {items.map((item, index, items) => {

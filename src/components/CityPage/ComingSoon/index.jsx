@@ -1,14 +1,5 @@
 import React from "react"
-
-import {
-  comingSoon,
-  comingSoonTitle,
-  comingSoonHeader,
-  comingSoonBody,
-  questionMark,
-  questionMarkBorderFront,
-  questionMarkBorderBack,
-} from "./styles.module.css"
+import * as s from "./styles.module.css"
 
 export const text = {
   title: "Coming Soon",
@@ -22,17 +13,17 @@ export const text = {
 
 const ComingSoon = () => {
   return (
-    <section id={text.title} className={comingSoon}>
-      <h1 className={comingSoonTitle}>{text.title}</h1>
+    <section id={text.title} className={s.comingSoon}>
+      <h1 className={s.comingSoonTitle}>{text.title}</h1>
       <img
-        className={questionMark}
+        className={s.questionMark}
         src={text.questionMarkSrc}
         alt={text.questionMarkAlt}
       />
-      <div className={questionMarkBorderFront} />
-      <div className={questionMarkBorderBack} />
-      <h3 className={comingSoonHeader}>{text.header}</h3>
-      <p className={comingSoonBody}>{text.body}</p>
+      <div className={s.questionMarkBorderFront} />
+      <div className={s.questionMarkBorderBack} />
+      <h3 className={s.comingSoonHeader}>{text.header}</h3>
+      <p className={s.comingSoonBody}>{text.body}</p>
     </section>
   )
 }

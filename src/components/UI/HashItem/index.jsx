@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { withRouter } from "react-router-dom"
-
-import { hashItem, hashMarker } from "./styles.module.css"
+import * as s from "./styles.module.css"
 
 const HashItem = ({ item, sectionTitle }) => {
   const [isHovering, setIsHovering] = useState(false)
@@ -9,7 +8,7 @@ const HashItem = ({ item, sectionTitle }) => {
     <span
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className={hashItem}
+      className={s.hashItem}
       key={item.name}
     >
       {item.name}
@@ -18,7 +17,7 @@ const HashItem = ({ item, sectionTitle }) => {
     <span
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className={hashMarker}
+      className={s.hashMarker}
       key={item.name}
     />
   )

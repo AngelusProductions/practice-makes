@@ -1,6 +1,5 @@
 .events {
   display: grid;
-  font-family: "Space Mono";
   font-size: 2rem;
   grid-template: 1fr 4.5fr / 1.2fr 4fr 10fr;
   height: 63rem;

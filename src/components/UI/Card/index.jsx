@@ -1,11 +1,5 @@
 import React, { useState } from "react"
-
-import {
-  card,
-  detailsClass,
-  borderWhite,
-  borderBlack,
-} from "./styles.module.css"
+import * as s from "./styles.module.css"
 
 export const text = {
   regex: /^[a-zA-Z]+$/g,
@@ -25,6 +19,7 @@ const Card = ({
   height,
   marginTop,
   isHoverable,
+  title,
   details,
 }) => {
   const [isHovering, setIsHovering] = useState(false)
@@ -37,19 +32,27 @@ const Card = ({
   const borderBlackTop = toRem(marginTop, text.blackTopWidthOffset)
   return (
     <div
-      className={card}
+      className={s.card}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
       {showHoverState ? (
-        <p className={detailsClass} style={contentStyles}>
-          {details}
-        </p>
+        <div className={s.detailsWrapper}>
+          {title && <h2 className={s.detailsHeader}>{title}</h2>}
+          <p className={s.detailsBody} style={contentStyles}>
+            {details}
+          </p>
+        </div>
       ) : (
-        <img src={photoUrl} alt={alt} className={card} style={contentStyles} />
+        <img
+          src={photoUrl}
+          alt={alt}
+          className={s.card}
+          style={contentStyles}
+        />
       )}
       <div
-        className={borderWhite}
+        className={s.borderWhite}
         style={{
           width: borderWhiteWidth,
           height: borderWhiteHeight,
@@ -57,7 +60,7 @@ const Card = ({
         }}
       />
       <div
-        className={borderBlack}
+        className={s.borderBlack}
         style={{ width, height, top: borderBlackTop }}
       />
     </div>

@@ -1,9 +1,8 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
+import * as s from "./styles.module.css"
 
-import { hashMenu } from "./styles.module.css"
-
-import HashMenuItem from "../HashItem"
+import HashItem from "../HashItem"
 
 export const text = {
   eventsAndTickets: "Events & Tickets",
@@ -17,9 +16,9 @@ const HashMenu = ({ items, sectionTitle }) => {
   hashItems.shift()
   hashItems.reverse()
   return (
-    <nav className={hashMenu}>
+    <nav className={s.hashMenu}>
       {hashItems.map(item => (
-        <HashMenuItem item={item} sectionTitle={sectionTitle} key={item.name} />
+        <HashItem item={item} sectionTitle={sectionTitle} key={item.name} />
       ))}
     </nav>
   )
