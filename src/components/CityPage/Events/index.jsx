@@ -15,6 +15,7 @@ export const text = {
   cardWidth: "29rem",
   cardHeight: "36.8rem",
   cardMarginTop: "5rem",
+  hashMenuTop: "49rem",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
 }
@@ -64,7 +65,11 @@ const BaseEvents = ({
         {text.getTickets}
       </a>
     </div>
-    <HashMenu sectionTitle={text.title} items={cityPageHashItems} />
+    <HashMenu
+      sectionTitle={text.title}
+      items={cityPageHashItems}
+      top={text.hashMenuTop}
+    />
   </section>
 )
 

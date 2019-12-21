@@ -8,7 +8,7 @@ export const text = {
   eventsAndTickets: "Events & Tickets",
 }
 
-const HashMenu = ({ items, sectionTitle }) => {
+const HashMenu = ({ items, sectionTitle, top }) => {
   let hashItems = items.map(({ name, url }) => {
     if (name === text.eventsAndTickets) name = name.split(" ")[0]
     return { name, url }
@@ -16,7 +16,7 @@ const HashMenu = ({ items, sectionTitle }) => {
   hashItems.shift()
   hashItems.reverse()
   return (
-    <nav className={s.hashMenu}>
+    <nav className={s.hashMenu} style={{ top }}>
       {hashItems.map(item => (
         <HashItem item={item} sectionTitle={sectionTitle} key={item.name} />
       ))}

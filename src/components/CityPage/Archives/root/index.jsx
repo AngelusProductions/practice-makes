@@ -8,9 +8,10 @@ import HashMenu from "components/UI/HashMenu"
 
 export const text = {
   title: "Archives",
-  cardWidth: "29rem",
-  cardHeight: "36.8rem",
-  cardMarginTop: "5rem",
+  cardWidth: "22rem",
+  cardHeight: "28.02rem",
+  cardMarginTop: "0",
+  hashMenuTop: "56rem",
 }
 
 const Archives = ({ events }) => {
@@ -28,11 +29,21 @@ const Archives = ({ events }) => {
 
 const BaseArchives = ({ cardProps, events }) => (
   <section id={text.title} className={s.archives}>
-    <h1 className={s.archivesHeader}>{text.header}</h1>
+    <h1 className={s.archivesHeader}>{text.title}</h1>
     {events.map((event, index, events) => (
-      <Event index={index} cardProps={cardProps} events={events} {...event} />
+      <Event
+        index={index}
+        cardProps={cardProps}
+        events={events}
+        key={event.name}
+        {...event}
+      />
     ))}
-    <HashMenu sectionTitle={text.title} items={cityPageHashItems} />
+    <HashMenu
+      sectionTitle={text.title}
+      items={cityPageHashItems}
+      top={text.hashMenuTop}
+    />
   </section>
 )
 

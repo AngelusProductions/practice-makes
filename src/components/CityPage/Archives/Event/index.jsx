@@ -7,24 +7,25 @@ import Card from "components/UI/Card"
 
 export const text = {
   title: "Archives",
-  remHeightBetweenCards: 5,
+  heightBetweenRows: 12,
 }
 
 const Event = ({ index, cardProps, name, photoUrl, date, details }) => {
   const sideLabelText = `${toLongDate(date)}: ${name}`
+  const rowIndex = Math.floor(index / 3)
   let gridColumn, top
   switch (index % 3) {
     case 0:
       gridColumn = 2
-      top = `${index * text.remHeightBetweenCards}rem`
+      top = `${-1 * rowIndex * text.heightBetweenRows}rem`
       break
     case 1:
       gridColumn = 1
-      top = `${5 + index * text.remHeightBetweenCards}rem`
+      top = `${-19 - rowIndex * text.heightBetweenRows}rem`
       break
     default:
       gridColumn = 3
-      top = `${10 + index * text.remHeightBetweenCards}rem`
+      top = `${-13 - rowIndex * text.heightBetweenRows}rem`
       break
   }
   return (

@@ -6,6 +6,7 @@ export const text = {
   whiteWidthOffset: 0.5,
   whiteHeightOffset: 0.5,
   whiteTopOffset: 0.7,
+  detailsWidthOffset: 4,
   blackTopWidthOffset: 1,
 }
 
@@ -25,6 +26,10 @@ const Card = ({
   const [isHovering, setIsHovering] = useState(false)
   const showHoverState = isHoverable && isHovering && details
   const contentStyles = { width, height, marginTop }
+  const detailsStyles = {
+    width: toRem(width, text.detailsWidthOffset),
+    marginTop,
+  }
 
   const borderWhiteWidth = toRem(width, text.whiteWidthOffset)
   const borderWhiteHeight = toRem(height, text.whiteHeightOffset)
@@ -37,9 +42,9 @@ const Card = ({
       onMouseLeave={() => setIsHovering(false)}
     >
       {showHoverState ? (
-        <div className={s.detailsWrapper}>
+        <div className={s.detailsWrapper} style={contentStyles}>
           {title && <h2 className={s.detailsHeader}>{title}</h2>}
-          <p className={s.detailsBody} style={contentStyles}>
+          <p className={s.detailsBody} style={detailsStyles}>
             {details}
           </p>
         </div>

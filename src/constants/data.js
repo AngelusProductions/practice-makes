@@ -50,7 +50,7 @@ export const cities = [
         linkUrl:
           "https://www.eventbrite.com/e/practice-makes-empathy-tickets-57835793415#",
         photoUrl:
-          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-humans.png",
+          "https://practice-makes-production.s3.amazonaws.com/boston/events/boston-events-empathy.png",
       },
       {
         name: "Identity",
