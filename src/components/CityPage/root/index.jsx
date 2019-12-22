@@ -8,6 +8,8 @@ import Welcome from "../Welcome"
 import Events from "../Events"
 import ComingSoon from "../ComingSoon"
 import Archives from "../Archives/root"
+import About from "../About"
+import Team from "../Team/root"
 
 const CityPage = ({
   match: {
@@ -21,6 +23,8 @@ const CityPage = ({
       <Events {...city} />
       <ComingSoon />
       <Archives {...city} />
+      <About {...city} />
+      <Team {...city} />
     </main>
   )
 }

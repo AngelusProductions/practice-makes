@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import * as s from "./styles.module.css"
 
 export const text = {
-  regex: /^[a-zA-Z]+$/g,
+  remRegex: /^[a-zA-Z]+$/g,
   whiteWidthOffset: 0.5,
   whiteHeightOffset: 0.5,
   whiteTopOffset: 0.7,
@@ -11,7 +11,7 @@ export const text = {
 }
 
 export const toRem = (property, offset) =>
-  `${parseFloat(property.replace(text.regex, "")) - offset}rem`
+  `${parseFloat(property.replace(text.remRegex, "")) - offset}rem`
 
 const Card = ({
   photoUrl,
@@ -22,31 +22,35 @@ const Card = ({
   isHoverable,
   title,
   details,
+  additionalStyles,
+  clearBorderBackground,
 }) => {
   const [isHovering, setIsHovering] = useState(false)
   const showHoverState = isHoverable && isHovering && details
-  const contentStyles = { width, height, marginTop }
-  const detailsStyles = {
-    width: toRem(width, text.detailsWidthOffset),
-    marginTop,
-  }
 
+  const contentStyles = { width, height, marginTop }
   const borderWhiteWidth = toRem(width, text.whiteWidthOffset)
   const borderWhiteHeight = toRem(height, text.whiteHeightOffset)
   const borderWhiteTop = toRem(marginTop, text.whiteTopOffset)
   const borderBlackTop = toRem(marginTop, text.blackTopWidthOffset)
+  const cardStyles = additionalStyles || {}
+  const detailsStyles = {
+    marginTop,
+    width: toRem(width, text.detailsWidthOffset),
+  }
   return (
     <div
       className={s.card}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
+      style={cardStyles}
     >
       {showHoverState ? (
         <div className={s.detailsWrapper} style={contentStyles}>
           {title && <h2 className={s.detailsHeader}>{title}</h2>}
-          <p className={s.detailsBody} style={detailsStyles}>
+          <div className={s.detailsBody} style={detailsStyles}>
             {details}
-          </p>
+          </div>
         </div>
       ) : (
         <img

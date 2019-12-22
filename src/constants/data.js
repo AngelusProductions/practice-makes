@@ -4,8 +4,7 @@ export const cities = [
     linkUrl: "/cities/boston",
     photoUrl:
       "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-main.png",
-    about:
-      "Intrepid is a fully integrated digital product creation studio within Accenture, that focuses on mobile apps, websites, connected devices and IoT experiences; headquartered in Cambridge, MA. At 180+ and growing, our designers, developers, product strategists, project managers and more, spin their chairs around to collaborate on cross functional team endeavors.",
+    about: `Boston's Practice Makes meetup is a monthly exploration of all things design hosted at Intrepid. Intrepid is a fully integrated digital product creation studio within Accenture, that focuses on mobile apps, websites, connected devices and IoT experiences; headquartered in Cambridge, MA. At 180+ and growing, our designers, developers, product strategists, project managers and more, spin their chairs around to collaborate on cross functional team endeavors.`,
     events: [
       {
         name: "Empowerment",
@@ -13,7 +12,7 @@ export const cities = [
         description:
           "We all face adversity in our jobs and our everyday lives. Sometimes all we can do is shake our fists in and hope that it will get better. It's times when we gather and share our stories and experiences that we can empower ourselves and each other. Let us do just that, as we share food, drink, and conversation. Join us the evening of August 15th to hear from our lineup of speakers talk about how they have empowered themselves and others in the design field! ",
         details:
-          "All are welcome to this event regardless of how they identify.\n\nCan’t make it anymore? No problem! Just be sure to update your RSVP so someone else can take your spot.",
+          "All are welcome to this event regardless of how they identify. Can’t make it anymore? No problem! Just be sure to update your RSVP so someone else can take your spot.",
         date: new Date(2020, 7, 15),
         addressTop: "+222 3rd St. Suite 4000",
         addressBottom: "Cambridge, MA 02142",
@@ -155,8 +154,8 @@ export const cities = [
           "https://practice-makes-production.s3.amazonaws.com/boston/team/boston-team-tim-poli.png",
       },
       {
-        firstName: "Elisabeth Bowerman",
-        lastName: "Teig",
+        firstName: "Elisabeth",
+        lastName: "Bowerman",
         job: "UX Designer",
         linkUrl: "https://www.linkedin.com/in/elisabeth-bowerman-0ab96189/",
         photoUrl:
@@ -173,7 +172,7 @@ export const cities = [
       {
         firstName: "Cody",
         lastName: "Johnston",
-        job: "Brand Designer | UX | Art Director",
+        job: "Brand Designer, Art Director",
         linkUrl: "www.codyjohnston.design",
         photoUrl:
           "https://practice-makes-production.s3.amazonaws.com/boston/team/boston-team-cody-johnston.png",
@@ -193,7 +192,9 @@ export const cities = [
           "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-skyline-waves.png",
       },
       about: {
-        top:
+        alt:
+          "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-about-alt.png",
+        process:
           "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-about-top.png",
         bottom:
           "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-about-bottom.png",
