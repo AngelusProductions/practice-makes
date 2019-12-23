@@ -5,7 +5,7 @@ import Card from "components/UI/Card"
 
 export const text = {
   title: "Team",
-  webLink: "Go to Personal Site",
+  webLink: "Personal Site",
   heightBetweenRows: 12,
 }
 

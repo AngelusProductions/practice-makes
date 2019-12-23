@@ -10,6 +10,7 @@ import ComingSoon from "../ComingSoon"
 import Archives from "../Archives/root"
 import About from "../About"
 import Team from "../Team/root"
+import Contact from "../Contact"
 
 const CityPage = ({
   match: {
@@ -25,6 +26,7 @@ const CityPage = ({
       <Archives {...city} />
       <About {...city} />
       <Team {...city} />
+      <Contact {...city} />
     </main>
   )
 }

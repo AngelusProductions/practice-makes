@@ -4,6 +4,7 @@ import * as s from "./styles.module.css"
 import Member from "../Member"
 
 export const text = {
+  title: "Team",
   header: "Meet the Team",
   cardWidth: "22rem",
   cardHeight: "22rem",

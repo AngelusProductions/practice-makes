@@ -5,6 +5,8 @@ export const cities = [
     photoUrl:
       "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-main.png",
     about: `Boston's Practice Makes meetup is a monthly exploration of all things design hosted at Intrepid. Intrepid is a fully integrated digital product creation studio within Accenture, that focuses on mobile apps, websites, connected devices and IoT experiences; headquartered in Cambridge, MA. At 180+ and growing, our designers, developers, product strategists, project managers and more, spin their chairs around to collaborate on cross functional team endeavors.`,
+    addressTop: "+222 3rd St. Suite 4000",
+    addressBottom: "Cambridge, MA 02142",
     events: [
       {
         name: "Empowerment",
@@ -199,6 +201,10 @@ export const cities = [
         bottom:
           "https://practice-makes-production.s3.amazonaws.com/boston/assets/boston-about-bottom.png",
       },
+      twitter:
+        "https://practice-makes-production.s3.amazonaws.com/UI/twitter.png",
+      instagram:
+        "https://practice-makes-production.s3.amazonaws.com/UI/instagram.png",
     },
   },
   {

@@ -1,0 +1,151 @@
+.contact {
+  background: #222222;
+  display: grid;
+  font-size: 2rem;
+  grid-template: 1fr 4.5fr 1fr / 3.5fr 5fr 5fr;
+  height: 100vh;
+  position: relative;
+}
+.contact nav {
+  filter: invert(1);
+}
+
+.contactHeader {
+  font-size: 3.4rem;
+  background: white;
+  position: absolute;
+  letter-spacing: 20px;
+  left: 12rem;
+  border: solid 4px #222222;
+  top: -7rem;
+  text-transform: uppercase;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.contactInfo {
+  grid-area: 2 / 2 / 2 / 2;
+  color: white;
+  position: absolute;
+  left: -9rem;
+  top: 4rem;
+  width: 37rem;
+}
+
+.contactInfoDescription,
+.contactInfoAddress {
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.contactInfoDescription {
+  display: block;
+  font-size: 16px;
+  margin: 2rem 0;
+  width: 84%;
+}
+
+.contactInfoAddress {
+  font-size: 1rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.contactForm {
+  grid-area: 2 / 3 / -1 / -1;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  width: 25rem;
+}
+
+.contactForm label {
+  color: white;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3.5px;
+}
+
+.contactForm input[type="text"] {
+  font-family: "Space Mono";
+  background: #222222;
+  display: block;
+  color: white;
+  margin-bottom: 1rem;
+  width: 93%;
+  padding: 1rem 0.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.contactForm textarea {
+  background: #222222;
+  display: block;
+  color: white;
+  margin-bottom: 1rem;
+  width: 93%;
+  padding: 1rem 0.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  height: 8rem;
+}
+
+.contactForm input[type="submit"] {
+  border: solid 4px white;
+  box-shadow: 0.6rem 0.6rem white;
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  font-family: "Space Mono";
+  letter-spacing: 4.5px;
+  background: #222222;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 7.3rem;
+  position: absolute;
+  left: -1rem;
+}
+.contactForm input[type="submit"]:hover {
+  background-color: white;
+  box-shadow: none;
+  color: #222222;
+}
+.contactForm input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+.contactFooter {
+  left: 14rem;
+  top: 2rem;
+  position: absolute;
+  grid-area: 3/ 2/ 3/ 3;
+  justify-self: self-start;
+  text-align: center;
+  color: white;
+}
+
+.twitterIcon,
+.instagramIcon {
+  width: 3rem;
+}
+
+.twitterIcon:hover,
+.instagramIcon:hover {
+  filter: invert(1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.twitterIcon {
+  margin-right: 1rem;
+}
+
+.contactCopyright {
+  font-family: "Poppins";
+  display: block;
+  margin-top: "3rem";
+  font-size: 1rem;
+}

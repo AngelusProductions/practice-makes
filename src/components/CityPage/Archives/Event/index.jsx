@@ -8,9 +8,18 @@ import Card from "components/UI/Card"
 export const text = {
   title: "Archives",
   heightBetweenRows: 12,
+  webLink: "Eventbrite Page",
 }
 
-const Event = ({ index, cardProps, name, photoUrl, date, details }) => {
+const Event = ({
+  index,
+  cardProps,
+  name,
+  linkUrl,
+  photoUrl,
+  date,
+  details,
+}) => {
   const sideLabelText = `${toLongDate(date)}: ${name}`
   const rowIndex = Math.floor(index / 3)
   let gridColumn, top
@@ -28,6 +37,15 @@ const Event = ({ index, cardProps, name, photoUrl, date, details }) => {
       top = `${-13 - rowIndex * text.heightBetweenRows}rem`
       break
   }
+
+  const detailsComponent = (
+    <>
+      <span className={s.jobTitle}>{details}</span>
+      <a href={linkUrl} className={s.webLink}>
+        {text.webLink}
+      </a>
+    </>
+  )
   return (
     <div className={s.event} style={{ gridColumn, top }}>
       <Card
@@ -35,7 +53,7 @@ const Event = ({ index, cardProps, name, photoUrl, date, details }) => {
         photoUrl={photoUrl}
         alt={name}
         title={name}
-        details={details}
+        details={detailsComponent}
       />
       <span className={s.sideLabel}>{sideLabelText}</span>
     </div>
