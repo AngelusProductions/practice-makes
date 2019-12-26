@@ -1,0 +1,11 @@
+.logoHome:hover,
+.logoCity:hover {
+  cursor: pointer;
+}
+
+.logoCity {
+  position: absolute;
+  top: 3.5vh;
+  left: 2.27vw;
+  width: 5.4rem;
+}

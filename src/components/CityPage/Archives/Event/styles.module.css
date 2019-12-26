@@ -1,0 +1,32 @@
+.event {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.event a {
+  color: #222222;
+  background: white;
+  padding: 1rem;
+  font-family: "Space Mono";
+  text-transform: uppercase;
+  position: absolute;
+  width: 10rem;
+  left: 6rem;
+  top: 20rem;
+}
+.event a:hover {
+  color: white;
+  background: #222222;
+}
+
+.sideLabel {
+  font-size: 1rem;
+  left: 31rem;
+  letter-spacing: 4px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 27rem;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  width: max-content;
+}

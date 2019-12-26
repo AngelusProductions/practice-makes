@@ -1,0 +1,52 @@
+.card {
+  grid-area: 2/2/2/2;
+  position: relative;
+}
+
+.detailsHeader {
+  background-color: white;
+  border: solid 4px #222222;
+  font-size: 1.1rem;
+  left: -1.4rem;
+  letter-spacing: 4.5px;
+  padding: 1rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: -4.1rem;
+}
+
+.detailsText {
+  font-family: "Poppins";
+  font-size: 0.5rem;
+}
+
+.borderWhite,
+.borderBlack {
+  position: absolute;
+}
+
+.borderWhite {
+  background-color: white;
+  left: 1.25rem;
+  z-index: -1;
+}
+
+.borderBlack {
+  background-color: #222222;
+  left: 1rem;
+  z-index: -2;
+}
+
+.detailsWrapper {
+  background: #222222;
+}
+
+.detailsBody {
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins";
+  left: 2.5rem;
+  margin-top: 0;
+  position: absolute;
+  top: 2.5rem;
+}

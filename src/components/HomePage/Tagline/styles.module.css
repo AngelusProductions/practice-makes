@@ -1,0 +1,32 @@
+.tagline {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.taglineTop {
+  font-size: 1.14rem;
+  letter-spacing: 0.28px;
+  position: absolute;
+  text-transform: uppercase;
+  top: -7vh;
+  left: 0.4vw;
+}
+
+.taglineBottom {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 6.2rem;
+  font-weight: 500;
+  position: absolute;
+  top: -6.3vh;
+  left: 1.3vw;
+}
+
+.taglineBottomUnderline {
+  background: #222222;
+  height: 0.5vh;
+  position: absolute;
+  margin-left: 0.25vw;
+  top: 2vh;
+  width: 300px;
+}

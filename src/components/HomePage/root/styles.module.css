@@ -1,0 +1,12 @@
+.homePage {
+  color: #222222;
+  display: grid;
+  font-family: "Space Mono";
+  font-size: 2rem;
+  grid-template-columns: 1fr 3.2fr;
+  padding: 7.3vh 3.8vw;
+}
+.homePage a {
+  color: #222222;
+  text-decoration: none;
+}

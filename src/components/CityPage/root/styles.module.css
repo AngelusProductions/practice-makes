@@ -1,0 +1,8 @@
+.cityPage {
+  color: #222222;
+  display: grid;
+  grid-template-rows: 7fr;
+}
+.cityPage a {
+  text-decoration: none;
+}

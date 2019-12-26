@@ -1,0 +1,12 @@
+.navItem:hover {
+  transform: scale(1.03);
+}
+.navItem:active {
+  transform: scale(0.9);
+}
+
+.dashIcon {
+  height: 50px;
+  transform: rotate(-90deg);
+  width: 2px;
+}

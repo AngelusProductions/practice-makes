@@ -23,11 +23,6 @@ describe("PageNotFound Component", () => {
     const seoComponent = wrapper.find(SEO)
 
     expect(seoComponent).toExist()
-  })
-
-  it("should pass the SEO component the correct title prop", () => {
-    const seoComponent = wrapper.find(SEO)
-
     expect(seoComponent.props().title).toBe(text.title)
   })
 

@@ -1,8 +1,8 @@
 import React from "react"
+import { BrowserRouter } from "react-router-dom"
 import "jest-enzyme"
 
-import Index, { text } from ".."
-import SEO from "components/seo"
+import Index from ".."
 import HomePage from "components/HomePage/root"
 
 afterEach(cleanup)
@@ -11,7 +11,11 @@ describe("Index Component", () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(<Index />)
+    wrapper = mount(
+      <BrowserRouter>
+        <Index />
+      </BrowserRouter>
+    )
   })
 
   it("should render the Index component", () => {

@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { isSEOActive } from "constants/config"
 import { appName, appAuthor } from "constants/text"
 
 function SEO({ description, lang, meta, title }) {
@@ -36,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
     titleTemplate = `%s | ${response.site.siteMetadata.title}`
     twitterCreator = response.site.siteMetadata.author
   }
-  return (
+  return isSEOActive ? (
     <Helmet
       htmlAttributes={{
         lang,
@@ -78,6 +79,8 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     />
+  ) : (
+    <meta />
   )
 }
 
