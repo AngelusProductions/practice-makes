@@ -1,5 +1,5 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
+// import { withRouter } from "react-router-dom"
 import * as s from "./styles.module.css"
 
 import { cityPageHashItems } from "constants/text"
@@ -27,7 +27,7 @@ export const text = {
   hashMenuTop: "45rem",
 }
 
-const Contact = ({ addressTop, addressBottom, assets, history }) => (
+const Contact = ({ addressTop, addressBottom, assets }) => (
   <section id={text.title} className={s.contact}>
     <h1 className={s.contactHeader}>{text.header}</h1>
 
@@ -88,13 +88,11 @@ const Contact = ({ addressTop, addressBottom, assets, history }) => (
         src={assets.twitter}
         className={s.twitterIcon}
         alt={"twitter"}
-        onClick={() => history.push(text.twitterLink)}
       />
       <img
         src={assets.instagram}
         className={s.instagramIcon}
         alt={"instagram"}
-        onClick={() => history.push(text.instagramLink)}
       />
       <span className={s.contactCopyright}>
         {text.footer.beginning}
@@ -113,4 +111,4 @@ const Contact = ({ addressTop, addressBottom, assets, history }) => (
   </section>
 )
 
-export default withRouter(Contact)
+export default Contact

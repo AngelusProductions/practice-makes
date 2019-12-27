@@ -1,11 +1,11 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
+import { navigate } from "@reach/router"
 import * as s from "./styles.module.css"
 
 import { mapMarkerIconProps } from "constants/text"
 
-const CityListItem = ({ name, linkUrl, photoUrl, history }) => {
-  const onCityListItemClick = () => history.push(linkUrl)
+const CityListItem = ({ name, linkUrl, photoUrl }) => {
+  const onCityListItemClick = () => navigate(linkUrl)
   const backgroundImage = `url(${photoUrl})`
   return (
     <li
@@ -25,4 +25,4 @@ const CityListItem = ({ name, linkUrl, photoUrl, history }) => {
   )
 }
 
-export default withRouter(CityListItem)
+export default CityListItem

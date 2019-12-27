@@ -1,5 +1,4 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
 import * as s from "./styles.module.css"
 
 import HashItem from "../HashItem"
@@ -24,4 +23,4 @@ const HashMenu = ({ items, sectionTitle, top }) => {
   )
 }
 
-export default withRouter(HashMenu)
+export default HashMenu

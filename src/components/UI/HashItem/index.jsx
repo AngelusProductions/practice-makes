@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { withRouter } from "react-router-dom"
 import * as s from "./styles.module.css"
 
 const HashItem = ({ item, sectionTitle }) => {
@@ -23,4 +22,4 @@ const HashItem = ({ item, sectionTitle }) => {
   )
 }
 
-export default withRouter(HashItem)
+export default HashItem

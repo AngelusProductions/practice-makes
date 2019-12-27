@@ -1,6 +1,6 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
-import { HashLink as Link } from "react-router-hash-link"
+import { Link } from "@reach/router"
+
 import * as s from "./styles.module.css"
 
 import { rootPath } from "constants/paths"
@@ -12,7 +12,7 @@ export const text = {
   tall: "4px",
 }
 
-const NavItem = ({ name, url, isNotLastItem, location: { pathname } }) => {
+const NavItem = ({ name, url, isNotLastItem, pathname }) => {
   const backgroundColor = pathname === rootPath ? text.black : text.white
   const width = pathname === rootPath ? text.short : text.tall
   return (
@@ -27,4 +27,4 @@ const NavItem = ({ name, url, isNotLastItem, location: { pathname } }) => {
   )
 }
 
-export default withRouter(NavItem)
+export default NavItem

@@ -1,7 +1,5 @@
 import React from "react"
 
-import Index from ".."
-
-const Houston = () => <Index />
+const Houston = () => <p>Coming Soon!</p>
 
 export default Houston
