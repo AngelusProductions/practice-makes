@@ -16,15 +16,15 @@ export const text = {
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
 }
 
-const Welcome = ({ name, assets }) => {
+const Welcome = ({ name, assets, pathname }) => {
   const hashItems = cityPageHashItems.map(item => {
     if (item.name === text.events) item.name = text.eventsNavText
     return item
   })
   return (
     <section id={text.title} className={s.welcome}>
-      <Logo src={text.logoSrc} width={text.logoWidth} />
-      <NavMenu items={hashItems} />
+      <Logo src={text.logoSrc} width={text.logoWidth} pathname={pathname} />
+      <NavMenu items={hashItems} pathname={pathname} />
       <span className={s.welcomeHeader}>{text.header}</span>
       <img className={s.cityscapeTop} src={assets.skyline.top} alt={name} />
     </section>

@@ -23,7 +23,6 @@ const Card = ({
   title,
   details,
   additionalStyles,
-  clearBorderBackground,
 }) => {
   const [isHovering, setIsHovering] = useState(false)
   const showHoverState = isHoverable && isHovering && details

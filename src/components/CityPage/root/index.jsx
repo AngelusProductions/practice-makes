@@ -1,5 +1,4 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
 import * as s from "./styles.module.css"
 
 import { cities } from "constants/data"
@@ -12,15 +11,11 @@ import About from "../About"
 import Team from "../Team/root"
 import Contact from "../Contact"
 
-const CityPage = ({
-  match: {
-    params: { cityName },
-  },
-}) => {
+const CityPage = ({ cityName, uri }) => {
   const city = cities.find(city => city.name.toLowerCase() === cityName)
   return (
     <main className={s.cityPage}>
-      <Welcome {...city} />
+      <Welcome {...city} pathname={uri} />
       <Events {...city} />
       <ComingSoon />
       <Archives {...city} />
@@ -31,4 +26,4 @@ const CityPage = ({
   )
 }
 
-export default withRouter(CityPage)
+export default CityPage
