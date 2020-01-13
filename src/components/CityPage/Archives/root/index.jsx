@@ -8,10 +8,10 @@ import HashMenu from "components/UI/HashMenu"
 
 export const text = {
   title: "Archives",
-  cardWidth: "22rem",
-  cardHeight: "28.02rem",
+  cardWidth: "17.5rem",
+  cardHeight: "21rem",
   cardMarginTop: "0",
-  hashMenuTop: "56rem",
+  hashMenuTop: "95rem",
 }
 
 const Archives = ({ events }) => {

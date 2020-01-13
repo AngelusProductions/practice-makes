@@ -3,7 +3,7 @@
   display: grid;
   font-size: 2rem;
   grid-template: 1fr 4.5fr 1fr / 3.5fr 5fr 5fr;
-  height: 100vh;
+  height: 60rem;
   position: relative;
 }
 .contact nav {
@@ -148,4 +148,5 @@
   display: block;
   margin-top: "3rem";
   font-size: 1rem;
+  width: max-content;
 }

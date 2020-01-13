@@ -4,7 +4,7 @@
   font-family: "Space Mono";
   font-size: 2rem;
   grid-template-columns: 1fr 3fr;
-  height: 100vh;
+  height: 56rem;
 }
 
 .welcomeHeader {
@@ -13,13 +13,14 @@
   letter-spacing: 0.28px;
   position: absolute;
   text-transform: uppercase;
-  top: 16.3rem;
-  left: 9.4rem;
+  top: 19rem;
+  width: 20rem;
+  left: 10rem;
 }
 
 .cityscapeTop {
-  left: 13.2rem;
+  left: 9.2rem;
   position: absolute;
-  top: 21.5rem;
-  width: 83vw;
+  top: 26.5rem;
+  width: 55rem;
 }

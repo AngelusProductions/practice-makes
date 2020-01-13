@@ -19,8 +19,8 @@ const CityPage = ({ cityName, uri }) => {
       <Events {...city} />
       <ComingSoon />
       <Archives {...city} />
-      <About {...city} />
-      <Team {...city} />
+      {/* <About {...city} /> */}
+      {/* <Team {...city} /> */}
       <Contact {...city} />
     </main>
   )

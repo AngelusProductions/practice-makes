@@ -10,9 +10,9 @@
   font-family: "Space Mono";
   text-transform: uppercase;
   position: absolute;
-  width: 10rem;
-  left: 6rem;
-  top: 20rem;
+  width: 7rem;
+  left: 4rem;
+  top: 13.5rem;
 }
 .event a:hover {
   color: white;
@@ -20,12 +20,12 @@
 }
 
 .sideLabel {
-  font-size: 1rem;
-  left: 31rem;
-  letter-spacing: 4px;
+  font-size: 0.8rem;
+  left: 19.7rem;
+  letter-spacing: 2px;
   position: absolute;
   text-transform: uppercase;
-  top: 27rem;
+  top: 19.6rem;
   transform: rotate(-90deg);
   transform-origin: left;
   width: max-content;

@@ -15,7 +15,7 @@ export const cities = [
           "We all face adversity in our jobs and our everyday lives. Sometimes all we can do is shake our fists in and hope that it will get better. It's times when we gather and share our stories and experiences that we can empower ourselves and each other. Let us do just that, as we share food, drink, and conversation. Join us the evening of August 15th to hear from our lineup of speakers talk about how they have empowered themselves and others in the design field! ",
         details:
           "All are welcome to this event regardless of how they identify. Can’t make it anymore? No problem! Just be sure to update your RSVP so someone else can take your spot.",
-        date: new Date(2020, 7, 15),
+        date: new Date(2019, 7, 15),
         addressTop: "+222 3rd St. Suite 4000",
         addressBottom: "Cambridge, MA 02142",
         linkUrl:
@@ -45,7 +45,7 @@ export const cities = [
           "Empathy as a concept and skillset is thoroughly married to human centered design and design thinking. Having empathy is not only vital to our jobs and our work, but in every interaction and exchange we have. We rarely, however, talk about concrete ways to practice empathy. At Practice Makes: Empathy, we will discuss and learn how to be empathetic towards our users, clients, coworkers, and more.",
         details:
           "We're obsessed with how our customers behave and modern behavioral research has shown that emotions drive our decisions. Let's talk about how to manage that as a product designer, developer or manager!",
-        date: new Date(2020, 3, 4),
+        date: new Date(2019, 3, 4),
         addressTop: "+222 3rd St. Suite 4000",
         addressBottom: "Cambridge, MA 02142",
         linkUrl:

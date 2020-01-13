@@ -4,7 +4,6 @@ import * as s from "./styles.module.css"
 import { cityPageHashItems } from "constants/text"
 import { toShortDate } from "constants/utils"
 
-import Card from "components/UI/Card"
 import HashMenu from "components/UI/HashMenu"
 
 export const text = {
@@ -12,9 +11,6 @@ export const text = {
   header: "Upcoming Event",
   upcomingEventName: "Empowerment",
   getTickets: "Get Tickets",
-  cardWidth: "29rem",
-  cardHeight: "36.8rem",
-  cardMarginTop: "5rem",
   hashMenuTop: "49rem",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
@@ -25,14 +21,8 @@ const Events = ({ events }) => {
     { photoUrl, name, date } = upcomingEvent
 
   const baseProps = {
-    cardProps: {
-      width: text.cardWidth,
-      height: text.cardHeight,
-      marginTop: text.cardMarginTop,
-      photoUrl,
-      alt: name,
-      isHoverable: false,
-    },
+    name,
+    photoUrl,
     dateText: toShortDate(date),
     ...upcomingEvent,
   }
@@ -41,7 +31,8 @@ const Events = ({ events }) => {
 }
 
 const BaseEvents = ({
-  cardProps,
+  photoUrl,
+  name,
   subtitle,
   description,
   addressTop,
@@ -51,8 +42,9 @@ const BaseEvents = ({
 }) => (
   <section id={text.title} className={s.events}>
     <h1 className={s.eventsHeader}>{text.header}</h1>
-    <Card {...cardProps} />
-    <div className={s.eventInfo} style={{ marginTop: cardProps.marginTop }}>
+    <img src={photoUrl} alt={name} className={s.eventsImage} />
+    <div className={s.eventsBorder} />
+    <div className={s.eventInfo}>
       <h2 className={s.eventInfoSubtitle}>{subtitle}</h2>
       <p className={s.eventInfoDescription}>{description}</p>
       <p className={s.eventInfoDate}>{dateText}</p>
