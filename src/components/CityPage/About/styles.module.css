@@ -7,15 +7,13 @@
   font-size: 2rem;
   height: 75rem;
   position: relative;
-  width: 100%;
 }
-.about div > div,
-.about nav {
-  filter: invert(1);
+.about > nav span {
+  color: #222222 !important;
+  background: white !important;
 }
 
 .aboutTitle,
-.cityscapeBottom,
 .cityscapeWaves,
 .aboutInfo {
   position: absolute;
@@ -38,7 +36,8 @@
 .cityscapeBottom {
   left: 11rem;
   top: 7rem;
-  width: 81rem;
+  margin: 6rem auto;
+  width: 74rem;
 }
 
 .cityscapeWaves {
@@ -49,14 +48,13 @@
 
 .aboutInfo {
   color: white;
-  left: 18.3rem;
+  left: 10rem;
   position: absolute;
-  top: 40.1rem;
-  width: 32rem;
+  top: 39.1rem;
 }
 
 .aboutHeader {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 6px;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -65,16 +63,81 @@
 .aboutBody {
   font-family: "Poppins";
   font-size: 1rem;
+  width: 29.7rem;
+}
+
+.topCard {
+  position: absolute;
+  left: 42rem;
+  top: 33.8rem;
+}
+
+.topImage {
+  width: 13rem;
+  z-index: 3;
+  position: absolute;
+}
+
+.topBorder {
+  width: 12.7rem;
+  position: absolute;
+  height: 12.4rem;
+  top: -1.3rem;
+  left: 1rem;
+  z-index: 1;
+  border: white 5px solid;
+}
+
+.bottomCard {
+  position: absolute;
+  left: 45rem;
+  top: 38.7rem;
+  z-index: -1;
+}
+
+.bottomImage {
+  width: 24rem;
+}
+
+.bottomBorder {
+  width: 24rem;
+  position: absolute;
+  height: 24rem;
+  top: -1.5rem;
+  left: 1.3rem;
+  z-index: -2;
+  border: white 5px solid;
+}
+
+
+.leftCard {
+  position: absolute;
+  left: 15rem;
+  top: 66rem;
+}
+
+.leftImage {
+  width: 27rem;
+}
+
+.leftBorder {
+  width: 26.7rem;
+  position: absolute;
+  height: 12.4rem;
+  top: -1.3rem;
+  left: 1rem;
+  z-index: -1;
+  border: white 5px solid;
 }
 
 .sideLabel {
   font-family: "Poppins";
-  font-size: 1.16rem;
-  left: 92.4rem;
+  font-size: 0.9rem;
+  left: 72.5rem;
   letter-spacing: 4.5px;
   position: absolute;
   text-transform: uppercase;
-  top: 69.5rem;
+  top: 61.3rem;
   transform: rotate(-90deg);
   transform-origin: left;
   width: 35rem;

@@ -2,8 +2,27 @@
   display: grid;
   font-size: 2rem;
   grid-template: 1fr 4.5fr / 1.2fr 4fr 10fr;
-  height: 63rem;
+  height: 77rem;
   position: relative;
+}
+
+.eventsImage, .eventsBorder {
+  grid-area: 2/2/2/2;
+}
+
+.eventsImage {
+  margin-left: 7rem;
+  margin-top: 1.6rem;
+  width: 32rem;
+}
+
+.eventsBorder {
+  border: solid 5px #222222;
+  height: 39rem;
+  margin-left: 8.9rem;
+  margin-top: -0.2rem;
+  width: 31.6rem;
+  z-index: -1;
 }
 
 .eventsHeader {
@@ -12,6 +31,7 @@
   grid-area: 1 / 2 / 1 / -1;
   letter-spacing: 20px;
   text-transform: uppercase;
+  margin: 6rem 3rem;
 }
 
 .eventInfo {
@@ -21,9 +41,10 @@
 }
 
 .eventInfoSubtitle {
-  font-size: 24px;
+  font-size: 2rem;
   letter-spacing: 6px;
   text-transform: uppercase;
+  margin-top: -1rem;
 }
 
 .eventInfoDescription,

@@ -23,6 +23,7 @@ const Card = ({
   title,
   details,
   additionalStyles,
+  sideLabel
 }) => {
   const [isHovering, setIsHovering] = useState(false)
   const showHoverState = isHoverable && isHovering && details
@@ -71,6 +72,7 @@ const Card = ({
         className={s.borderBlack}
         style={{ width, height, top: borderBlackTop }}
       />
+      {sideLabel}
     </div>
   )
 }

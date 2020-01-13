@@ -61,27 +61,32 @@ const About = ({ name, about, events, assets }) => {
         <h3 className={s.aboutHeader}>{headerText}</h3>
         <p className={s.aboutBody}>{about}</p>
       </div>
-      <Card
-        photoUrl={assets.about.process}
-        alt={appName}
-        isHoverable={false}
-        additionalStyles={text.processCardStyles}
-        {...text.processCardProps}
-      />
-      <Card
-        photoUrl={assets.about.alt}
-        alt={appName}
-        isHoverable={false}
-        additionalStyles={text.altCardStyles}
-        {...text.altCardProps}
-      />
-      <Card
-        photoUrl={assets.about.bottom}
-        alt={appName}
-        isHoverable={false}
-        additionalStyles={text.bottomCardStyles}
-        {...text.bottomCardProps}
-      />
+      <div className={s.topCard}>
+        <img
+          src={assets.about.process}
+          alt={appName}
+          className={s.topImage}
+        />
+        <div className={s.topBorder}/>
+      </div>
+
+      <div className={s.bottomCard}>
+        <img
+          src={assets.about.alt}
+          alt={appName}
+          className={s.bottomImage}
+        />
+        <div className={s.bottomBorder}/>
+      </div>
+
+      <div className={s.leftCard}>
+        <img
+          src={assets.about.bottom}
+          alt={appName}
+          className={s.leftImage}
+        />
+        <div className={s.leftBorder}/>
+      </div>
       <span className={s.sideLabel}>{sideLabelText}</span>
       <HashMenu
         sectionTitle={text.title}

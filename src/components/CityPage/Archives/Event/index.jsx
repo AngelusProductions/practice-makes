@@ -26,15 +26,15 @@ const Event = ({
   switch (index % 3) {
     case 0:
       gridColumn = 2
-      top = `${-1 * rowIndex * text.heightBetweenRows}rem`
+      top = `${-1 * rowIndex * text.heightBetweenRows}vw`
       break
     case 1:
       gridColumn = 1
-      top = `${-19 - rowIndex * text.heightBetweenRows}rem`
+      top = `${-19 - rowIndex * text.heightBetweenRows}vw`
       break
     default:
       gridColumn = 3
-      top = `${-13 - rowIndex * text.heightBetweenRows}rem`
+      top = `${-13 - rowIndex * text.heightBetweenRows}vw`
       break
   }
 
@@ -46,16 +46,17 @@ const Event = ({
       </a>
     </>
   )
+  const sideLabel = <span className={s.sideLabel}>{sideLabelText}</span>
   return (
     <div className={s.event} style={{ gridColumn, top }}>
       <Card
-        {...cardProps}
         photoUrl={photoUrl}
         alt={name}
         title={name}
         details={detailsComponent}
+        sideLabel={sideLabel}
+        {...cardProps}
       />
-      <span className={s.sideLabel}>{sideLabelText}</span>
     </div>
   )
 }

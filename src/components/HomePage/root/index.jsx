@@ -16,9 +16,7 @@ export const text = {
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-home.png",
 }
 
-const HomePage = ({ location: { pathname }}) => {
-  debugger
-  return(
+const HomePage = ({ location: { pathname }}) => (
   <main className={s.homePage}>
     <SEO title={text.title} />
     <Logo src={text.logoSrc} width={text.logoWidth} pathname={pathname}/>
@@ -26,6 +24,6 @@ const HomePage = ({ location: { pathname }}) => {
     <NavMenu items={homePageNavItems} pathname={pathname} />
     <CityList /> 
   </main>
-)}
+)
 
 export default HomePage

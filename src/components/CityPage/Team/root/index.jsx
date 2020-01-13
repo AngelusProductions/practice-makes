@@ -3,20 +3,19 @@ import * as s from "./styles.module.css"
 
 import Member from "../Member"
 
-export const text = {
+export const t = {
   title: "Team",
   header: "Meet the Team",
-  cardWidth: "22rem",
-  cardHeight: "22rem",
+  cardSize: "15rem",
   cardMarginTop: "0",
 }
 
 const Team = ({ team }) => {
   const baseProps = {
     cardProps: {
-      width: text.cardWidth,
-      height: text.cardHeight,
-      marginTop: text.cardMarginTop,
+      width: t.cardSize,
+      height: t.cardSize,
+      marginTop: t.cardMarginTop,
       isHoverable: true,
     },
     team,
@@ -25,17 +24,19 @@ const Team = ({ team }) => {
 }
 
 const BaseTeam = ({ cardProps, team }) => (
-  <section id={text.title} className={s.team}>
-    <h1 className={s.teamHeader}>{text.header}</h1>
-    {team.map((member, index, team) => (
-      <Member
-        index={index}
-        cardProps={cardProps}
-        team={team}
-        key={index}
-        {...member}
-      />
-    ))}
+  <section id={t.title} className={s.team}>
+    <h1 className={s.teamHeader}>{t.header}</h1>
+    <div className={s.teamList}>
+      {team.map((member, index, team) => (
+        <Member
+          index={index}
+          cardProps={cardProps}
+          team={team}
+          key={index}
+          {...member}
+        />
+      ))}
+    </div>
   </section>
 )
 
