@@ -29,4 +29,14 @@
   margin-left: 0.25vw;
   top: 2vh;
   width: 300px;
+  animation: SlideIn 1.5s;
+}
+
+@keyframes SlideIn {
+  0% {
+    transform: translate(-20rem);
+  }
+  100% {
+    transform: translate(0);
+  }
 }

@@ -66,6 +66,12 @@
   width: 29.7rem;
 }
 
+.topBorder,
+.bottomBorder,
+.leftBorder {
+  animation: Pulse 1.5s infinite;
+}
+
 .topCard {
   position: absolute;
   left: 42rem;
@@ -141,4 +147,17 @@
   transform: rotate(-90deg);
   transform-origin: left;
   width: 35rem;
+}
+
+
+@keyframes Pulse {
+  0% {
+    transform: scale(1);
+  } 
+  10% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
