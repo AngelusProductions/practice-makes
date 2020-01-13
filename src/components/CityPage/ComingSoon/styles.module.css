@@ -25,6 +25,7 @@
   position: absolute;
   top: -5.4rem;
   border: solid 4px #222222;
+  /* animation: blink 1.5ms infinite;  */
 }
 
 .comingSoonHeader,
@@ -78,4 +79,43 @@
   top: 7rem;
   left: 11rem;
   z-index: 1;
+  animation: Pulse 1.5s infinite;
+}
+
+
+@keyframes blink {
+  0% {
+    color: #222222;
+  }
+  50% {
+    color: #222222;
+  }
+  51% {
+    color: white;
+  }
+  52% {
+    color: #222222;
+  }
+  53% {
+    color: white;
+  }
+  54% {
+    color: #222222;
+  }
+  100% {
+    color: #222222;
+  }
+}
+
+
+@keyframes Pulse {
+  0% {
+    transform: scale(1);
+  } 
+  10% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

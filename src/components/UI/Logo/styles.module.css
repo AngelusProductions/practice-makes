@@ -1,3 +1,8 @@
+.logoHome,
+.logoCity {
+  animation: GrowIn 1.5s;
+}
+
 .logoHome:hover,
 .logoCity:hover {
   cursor: pointer;
@@ -7,4 +12,13 @@
   position: absolute;
   top: 2.5rem;
   left: 1.97rem;
+}
+
+@keyframes GrowIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

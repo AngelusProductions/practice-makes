@@ -8,7 +8,6 @@
 }
 
 .welcomeHeader {
-  color: white;
   font-size: 2.3rem;
   letter-spacing: 0.28px;
   position: absolute;
@@ -16,6 +15,7 @@
   top: 19rem;
   width: 20rem;
   left: 10rem;  
+  animation: blink 3s infinite;
 }
 
 .cityscapeTop {
@@ -23,4 +23,28 @@
   position: absolute;
   top: 26.5rem;
   width: 53rem;
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  51% {
+    color: black;
+  }
+  52% {
+    color: white;
+  }
+  53% {
+    color: black;
+  }
+  54% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
 }

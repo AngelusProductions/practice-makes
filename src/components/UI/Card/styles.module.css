@@ -22,6 +22,7 @@
 .borderWhite,
 .borderBlack {
   position: absolute;
+  animation: Pulse 1.5s infinite;
 }
 
 .borderWhite {
@@ -48,4 +49,16 @@
   margin-top: 0;
   position: absolute;
   top: 2.5rem;
+}
+
+@keyframes Pulse {
+  0% {
+    transform: scale(1);
+  } 
+  10% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
