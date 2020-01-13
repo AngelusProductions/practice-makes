@@ -7,7 +7,6 @@
   font-size: 2rem;
   height: 75rem;
   position: relative;
-  width: 100%;
 }
 .about > nav span {
   color: #222222 !important;
@@ -64,7 +63,7 @@
 .aboutBody {
   font-family: "Poppins";
   font-size: 1rem;
-  width: 297rem;
+  width: 29.7rem;
 }
 
 .topCard {
