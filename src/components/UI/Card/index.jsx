@@ -72,7 +72,7 @@ const Card = ({
         className={s.borderBlack}
         style={{ width, height, top: borderBlackTop }}
       />
-      {sideLabel()}
+      {sideLabel}
     </div>
   )
 }

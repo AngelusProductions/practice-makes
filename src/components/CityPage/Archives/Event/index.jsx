@@ -46,6 +46,7 @@ const Event = ({
       </a>
     </>
   )
+  const sideLabel = <span className={s.sideLabel}>{sideLabelText}</span>
   return (
     <div className={s.event} style={{ gridColumn, top }}>
       <Card
@@ -53,9 +54,7 @@ const Event = ({
         alt={name}
         title={name}
         details={detailsComponent}
-        sideLabel={() => (
-          <span className={s.sideLabel}>{sideLabelText}</span>
-        )}
+        sideLabel={sideLabel}
         {...cardProps}
       />
     </div>
