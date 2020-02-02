@@ -14,10 +14,11 @@ const HashMenu = ({ items, sectionTitle, top }) => {
   })
   hashItems.shift()
   hashItems.reverse()
+  const isInverted = ['About', 'Contact'].includes(sectionTitle)
   return (
     <nav className={s.hashMenu} style={{ top }}>
       {hashItems.map(item => (
-        <HashItem item={item} sectionTitle={sectionTitle} key={item.name} />
+        <HashItem item={item} sectionTitle={sectionTitle} isInverted={isInverted} key={item.name} />
       ))}
     </nav>
   )

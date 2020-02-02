@@ -4,53 +4,23 @@ import * as s from "./styles.module.css"
 import { appName, cityPageHashItems } from "constants/text"
 import { toShortDate } from "constants/utils"
 
-import Card from "components/UI/Card"
 import HashMenu from "components/UI/HashMenu"
 
-export const text = {
+export const t = {
   title: "About",
   eventName: "Process",
-  altCardProps: {
-    width: "30.30rem",
-    height: "30.30rem",
-    marginTop: "0",
-  },
-  altCardStyles: {
-    left: "24.6rem",
-    top: "19rem",
-    height: "fit-content",
-  },
-  processCardProps: {
-    width: "15rem",
-    height: "15rem",
-    marginTop: "0",
-  },
-  processCardStyles: {
-    left: "19.4rem",
-    top: "14.4rem",
-    zIndex: "1",
-  },
-  bottomCardProps: {
-    width: "29rem",
-    height: "19.4rem",
-    marginTop: "0",
-  },
-  bottomCardStyles: {
-    left: "-14.6rem",
-    top: "44rem",
-  },
   hashMenuTop: "33rem",
 }
 
 const About = ({ name, about, events, assets }) => {
   const headerText = `${appName} in ${name}`
-  const event = events.find(e => e.name === text.eventName)
+  const event = events.find(e => e.name === t.eventName)
   const sideLabelText = `${appName.split(" ")[0]}  ${
     appName.split(" ")[1]
   }  :      ${event.name}  -  ${toShortDate(event.date).slice(0, 4)}   06`
   return (
-    <section id={text.title} className={s.about}>
-      <h1 className={s.aboutTitle}>{text.title}</h1>
+    <section id={t.title} name={t.title} className={s.about}>
+      <h1 className={s.aboutTitle}>{t.title}</h1>
       <img
         className={s.cityscapeBottom}
         src={assets.skyline.bottom}
@@ -89,9 +59,9 @@ const About = ({ name, about, events, assets }) => {
       </div>
       <span className={s.sideLabel}>{sideLabelText}</span>
       <HashMenu
-        sectionTitle={text.title}
+        sectionTitle={t.title}
         items={cityPageHashItems}
-        top={text.hashMenuTop}
+        top={t.hashMenuTop}
       />
     </section>
   )

@@ -1,8 +1,8 @@
 .hashItem,
 .hashMarker {
   display: block;
-  background: #222222;
   margin-bottom: 1rem;
+  width: 6.15rem;
 }
 
 .hashItem {
@@ -12,9 +12,15 @@
   padding: 0.5rem 0.8rem;
   text-align: center;
   letter-spacing: 4.5px;
+  background: #222222;
+}
+.hashItem:hover {
+  cursor: pointer;
 }
 
 .hashMarker {
-  width: 0.2rem;
-  height: 2rem;
+  background: none;
+  border-left: solid 4px;
+  height: 2.2rem;
+  width: 7.5rem;
 }

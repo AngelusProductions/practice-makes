@@ -8,9 +8,15 @@
   height: 75rem;
   position: relative;
 }
-.about > nav span {
+.about .hashItem {
   color: #222222 !important;
   background: white !important;
+}
+.about .hashMarker {
+  background: #222222;
+  border-left: solid 4px #ffffff;
+  height: 2.2rem;
+  width: 7.5rem;
 }
 
 .aboutTitle,

@@ -6,7 +6,7 @@ import { cityPageHashItems } from "constants/text"
 import Logo from "components/UI/Logo"
 import NavMenu from "components/UI/NavMenu"
 
-export const text = {
+export const t = {
   title: "Welcome",
   header: "Welcome to",
   events: "Events",
@@ -18,14 +18,14 @@ export const text = {
 
 const Welcome = ({ name, assets, pathname }) => {
   const hashItems = cityPageHashItems.map(item => {
-    if (item.name === text.events) item.name = text.eventsNavText
+    if (item.name === t.events) item.name = t.eventsNavText
     return item
   })
   return (
-    <section id={text.title} className={s.welcome}>
-      <Logo src={text.logoSrc} width={text.logoWidth} pathname={pathname} />
+    <section id={t.title} name={t.title} className={s.welcome}>
+      <Logo src={t.logoSrc} width={t.logoWidth} pathname={pathname} />
       <NavMenu items={hashItems} pathname={pathname} />
-      <span className={s.welcomeHeader}>{text.header}</span>
+      <span className={s.welcomeHeader}>{t.header}</span>
       <img className={s.cityscapeTop} src={assets.skyline.top} alt={name} />
     </section>
   )

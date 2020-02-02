@@ -45,20 +45,19 @@ const Card = ({
       onMouseLeave={() => setIsHovering(false)}
       style={cardStyles}
     >
-      {showHoverState ? (
+      <img
+        src={photoUrl}
+        alt={alt}
+        className={s.card}
+        style={contentStyles}
+      />
+      {showHoverState && (
         <div className={s.detailsWrapper} style={contentStyles}>
           {title && <h2 className={s.detailsHeader}>{title}</h2>}
           <div className={s.detailsBody} style={detailsStyles}>
             {details}
           </div>
         </div>
-      ) : (
-        <img
-          src={photoUrl}
-          alt={alt}
-          className={s.card}
-          style={contentStyles}
-        />
       )}
       <div
         className={s.borderWhite}

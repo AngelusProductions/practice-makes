@@ -5,9 +5,9 @@ import { toLongDate } from "constants/utils"
 
 import Card from "components/UI/Card"
 
-export const text = {
+export const t = {
   title: "Archives",
-  heightBetweenRows: 12,
+  heightRatio: 12,
   webLink: "Eventbrite Page",
 }
 
@@ -20,29 +20,28 @@ const Event = ({
   date,
   details,
 }) => {
+  let gridColumn, top
   const sideLabelText = `${toLongDate(date)}: ${name}`
   const rowIndex = Math.floor(index / 3)
-  let gridColumn, top
   switch (index % 3) {
     case 0:
       gridColumn = 2
-      top = `${-1 * rowIndex * text.heightBetweenRows}vw`
+      top = `${-1 * rowIndex * t.heightRatio}vw`
       break
     case 1:
       gridColumn = 1
-      top = `${-19 - rowIndex * text.heightBetweenRows}vw`
+      top = `${-19 - rowIndex * t.heightRatio}vw`
       break
     default:
       gridColumn = 3
-      top = `${-13 - rowIndex * text.heightBetweenRows}vw`
+      top = `${-13 - rowIndex * t.heightRatio}vw`
       break
   }
-
   const detailsComponent = (
     <>
       <span className={s.jobTitle}>{details}</span>
       <a href={linkUrl} className={s.webLink}>
-        {text.webLink}
+        {t.webLink}
       </a>
     </>
   )

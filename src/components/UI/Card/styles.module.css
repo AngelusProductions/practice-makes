@@ -39,6 +39,8 @@
 
 .detailsWrapper {
   background: #222222;
+  position: absolute;
+  top: 0;
 }
 
 .detailsBody {
