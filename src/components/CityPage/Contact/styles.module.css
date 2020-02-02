@@ -7,9 +7,6 @@
   position: relative;
   margin-top: 2rem;
 }
-.contact nav {
-  filter: invert(1);
-}
 
 .contactHeader {
   font-size: 3.4rem;

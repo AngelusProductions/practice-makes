@@ -6,7 +6,7 @@ import { cityPageHashItems } from "constants/text"
 import Event from "../Event"
 import HashMenu from "components/UI/HashMenu"
 
-export const text = {
+export const t = {
   title: "Archives",
   cardWidth: "17.5rem",
   cardHeight: "21rem",
@@ -17,9 +17,9 @@ export const text = {
 const Archives = ({ events }) => {
   const baseProps = {
     cardProps: {
-      width: text.cardWidth,
-      height: text.cardHeight,
-      marginTop: text.cardMarginTop,
+      width: t.cardWidth,
+      height: t.cardHeight,
+      marginTop: t.cardMarginTop,
       isHoverable: true,
     },
     events,
@@ -28,8 +28,8 @@ const Archives = ({ events }) => {
 }
 
 const BaseArchives = ({ cardProps, events }) => (
-  <section id={text.title} className={s.archives}>
-    <h1 className={s.archivesHeader}>{text.title}</h1>
+  <section id={t.title} name={t.title} className={s.archives}>
+    <h1 className={s.archivesHeader}>{t.title}</h1>
     {events.map((event, index, events) => (
       <Event
         index={index}
@@ -40,9 +40,9 @@ const BaseArchives = ({ cardProps, events }) => (
       />
     ))}
     <HashMenu
-      sectionTitle={text.title}
+      sectionTitle={t.title}
       items={cityPageHashItems}
-      top={text.hashMenuTop}
+      top={t.hashMenuTop}
     />
   </section>
 )

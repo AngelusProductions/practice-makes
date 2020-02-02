@@ -6,7 +6,7 @@ import { toShortDate } from "constants/utils"
 
 import HashMenu from "components/UI/HashMenu"
 
-export const text = {
+export const t = {
   title: "Events",
   header: "Upcoming Event",
   upcomingEventName: "Empowerment",
@@ -17,7 +17,7 @@ export const text = {
 }
 
 const Events = ({ events }) => {
-  const upcomingEvent = events.find(e => e.name === text.upcomingEventName),
+  const upcomingEvent = events.find(e => e.name === t.upcomingEventName),
     { photoUrl, name, date } = upcomingEvent
 
   const baseProps = {
@@ -40,8 +40,8 @@ const BaseEvents = ({
   linkUrl,
   dateText,
 }) => (
-  <section id={text.title} className={s.events}>
-    <h1 className={s.eventsHeader}>{text.header}</h1>
+  <section id={t.title} name={t.title} className={s.events}>
+    <h1 className={s.eventsHeader}>{t.header}</h1>
     <img src={photoUrl} alt={name} className={s.eventsImage} />
     <div className={s.eventsBorder} />
     <div className={s.eventInfo}>
@@ -54,13 +54,13 @@ const BaseEvents = ({
         {addressBottom}
       </span>
       <a href={linkUrl} className={s.eventInfoTickets}>
-        {text.getTickets}
+        {t.getTickets}
       </a>
     </div>
     <HashMenu
-      sectionTitle={text.title}
+      sectionTitle={t.title}
       items={cityPageHashItems}
-      top={text.hashMenuTop}
+      top={t.hashMenuTop}
     />
   </section>
 )

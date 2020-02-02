@@ -24,7 +24,7 @@ const Team = ({ team }) => {
 }
 
 const BaseTeam = ({ cardProps, team }) => (
-  <section id={t.title} className={s.team}>
+  <section id={t.title} name={t.title} className={s.team}>
     <h1 className={s.teamHeader}>{t.header}</h1>
     <div className={s.teamList}>
       {team.map((member, index, team) => (

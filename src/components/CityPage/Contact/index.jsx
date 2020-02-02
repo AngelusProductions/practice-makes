@@ -6,7 +6,7 @@ import { cityPageHashItems } from "constants/text"
 
 import HashMenu from "components/UI/HashMenu"
 
-export const text = {
+export const t = {
   title: "Contact",
   header: "Contact Us",
   name: "name",
@@ -28,13 +28,13 @@ export const text = {
 }
 
 const Contact = ({ addressTop, addressBottom, assets }) => (
-  <section id={text.title} className={s.contact}>
-    <h1 className={s.contactHeader}>{text.header}</h1>
+  <section id={t.title} name={t.title} className={s.contact}>
+    <h1 className={s.contactHeader}>{t.header}</h1>
 
     <div className={s.contactInfo}>
-      <p className={s.contactInfoDescription}>{text.description}</p>
+      <p className={s.contactInfoDescription}>{t.description}</p>
       <span className={s.contactInfoAddress}>
-        {text.office}
+        {t.office}
         <br />
         <br />
         {addressTop},
@@ -49,38 +49,38 @@ const Contact = ({ addressTop, addressBottom, assets }) => (
         e.preventDefault()
       }}
     >
-      <label htmlFor={text.name}>{text.name}</label>
+      <label htmlFor={t.name}>{t.name}</label>
       <input
         type="text"
-        id={text.name}
-        name={text.name}
-        placeholder={text.name}
+        id={t.name}
+        name={t.name}
+        placeholder={t.name}
       />
 
-      <label htmlFor={text.email}>{text.email}</label>
+      <label htmlFor={t.email}>{t.email}</label>
       <input
         type="text"
-        id={text.email}
-        name={text.email}
-        placeholder={text.email}
+        id={t.email}
+        name={t.email}
+        placeholder={t.email}
       />
 
-      <label htmlFor={text.subject}>{text.subject}</label>
+      <label htmlFor={t.subject}>{t.subject}</label>
       <input
         type="text"
-        id={text.subject}
-        name={text.subject}
-        placeholder={text.subject}
+        id={t.subject}
+        name={t.subject}
+        placeholder={t.subject}
       />
 
-      <label htmlFor={text.message}>{text.message}</label>
+      <label htmlFor={t.message}>{t.message}</label>
       <textarea
-        id={text.message}
-        name={text.message}
-        placeholder={`${text.message}...`}
+        id={t.message}
+        name={t.message}
+        placeholder={`${t.message}...`}
       />
 
-      <input type="submit" value={text.send} />
+      <input type="submit" value={t.send} />
     </form>
 
     <footer className={s.contactFooter}>
@@ -95,18 +95,18 @@ const Contact = ({ addressTop, addressBottom, assets }) => (
         alt={"instagram"}
       />
       <span className={s.contactCopyright}>
-        {text.footer.beginning}
+        {t.footer.beginning}
         <p style={{ fontFamily: "Space Mono", display: "inline-block" }}>
-          {text.footer.accenture}
+          {t.footer.accenture}
         </p>
-        {text.footer.end}
+        {t.footer.end}
       </span>
     </footer>
 
     <HashMenu
-      sectionTitle={text.title}
+      sectionTitle={t.title}
       items={cityPageHashItems}
-      top={text.hashMenuTop}
+      top={t.hashMenuTop}
     />
   </section>
 )
