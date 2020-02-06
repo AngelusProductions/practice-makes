@@ -4,12 +4,17 @@
   height: 41vh;
   width: 57vw;
 }
-.cityListItem:hover {
-  cursor: pointer;
-}
-.cityListItem:nth-child(1) {
-  margin-bottom: 0.8vh;
-}
+  .cityListItem:nth-child(1) {
+    margin-bottom: 0.8vh;
+  }
+  .cityListItem:nth-child(1):hover {
+    cursor: pointer;
+    filter: brightness(1.2) drop-shadow(2px 4px 3px #222) !important;
+    transform: scale(1.02);
+  }
+  .cityListItem:nth-child(2):hover {
+    cursor: not-allowed;
+  }
 
 .cityListItemLabel {
   background: white;
@@ -25,13 +30,26 @@
   text-transform: uppercase;
   top: 40.4%;
 }
-.cityListItemLabel:hover {
-  filter: invert(1);
-  cursor: pointer;
-}
+  .cityListItemLabel:hover {
+    filter: invert(1);
+    cursor: pointer;
+  }
 
 .mapMarkerIcon {
   height: 0.9em;
   margin-right: 0.4em;
   transform: translateY(0.4vh);
+}
+
+.comingSoon {
+  position: absolute;
+  left: 30vw;
+  top: 63vh;
+  font-size: 6vw;
+  background: white;
+  padding: 0.5rem 0 0 1rem;
+  border: solid 5px #222;
+}
+.comingSoon:hover {
+  cursor: not-allowed;
 }

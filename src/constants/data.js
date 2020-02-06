@@ -121,7 +121,7 @@ export const cities = [
         job: "UX Designer, Manager",
         linkUrl: "http://www.danielleteig.net/",
         photoUrl:
-          "https://media.licdn.com/dms/image/C4E03AQFwsXOJrzyV1Q/profile-displayphoto-shrink_800_800/0?e=1580947200&v=beta&t=phSDyQGtoA0LOT6BHTnkhdUJ9YftUlDmbyWaye_4RkU",
+          "https://media-exp1.licdn.com/dms/image/C4E03AQFwsXOJrzyV1Q/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=w09WmYajmZ-dlGmmTpMshUXKGkUICIUy_R1LO8stOJU",
       },
       {
         firstName: "Julia",
