@@ -2,23 +2,14 @@ import React from "react"
 import * as s from "./styles.module.css"
 
 import HashItem from "../HashItem"
+import { cityPageHashItems } from "../../../constants/text"
 
-export const text = {
-  eventsAndTickets: "Events & Tickets",
-}
-
-const HashMenu = ({ items, sectionTitle, top }) => {
-  let hashItems = items.map(({ name, url }) => {
-    if (name === text.eventsAndTickets) name = name.split(" ")[0]
-    return { name, url }
-  })
-  hashItems.shift()
-  hashItems.reverse()
-  const isInverted = ['About', 'Contact'].includes(sectionTitle)
+const HashMenu = ({ sectionId, top }) => {
+  const isInverted = ['about', 'contact'].includes(sectionId)
   return (
     <nav className={s.hashMenu} style={{ top }}>
-      {hashItems.map(item => (
-        <HashItem item={item} sectionTitle={sectionTitle} isInverted={isInverted} key={item.name} />
+      {cityPageHashItems.map(item => (
+        <HashItem item={item} sectionId={sectionId} isInverted={isInverted} key={item.name} />
       ))}
     </nav>
   )

@@ -18,14 +18,10 @@
 }
 
 .navMenuCity {
-  top: 58.6rem;
+  top: 50.6rem;
   left: 5rem;
-  width: 48rem;
+  width: 40rem;
 }
-.navMenuCity > a {
+.navMenuCity > span {
   color: white;
-}
-.navMenuCity > a:nth-child(1),
-.navMenuCity > div:nth-child(2) {
-  visibility: hidden;
 }

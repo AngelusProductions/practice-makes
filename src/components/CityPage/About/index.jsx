@@ -1,7 +1,7 @@
 import React from "react"
 import * as s from "./styles.module.css"
 
-import { appName, cityPageHashItems } from "constants/text"
+import { appName } from "constants/text"
 import { toShortDate } from "constants/utils"
 
 import HashMenu from "components/UI/HashMenu"
@@ -9,7 +9,7 @@ import HashMenu from "components/UI/HashMenu"
 export const t = {
   title: "About",
   eventName: "Process",
-  hashMenuTop: "33rem",
+  hashMenuTop: "50rem",
 }
 
 const About = ({ name, about, events, assets }) => {
@@ -19,7 +19,7 @@ const About = ({ name, about, events, assets }) => {
     appName.split(" ")[1]
   }  :      ${event.name}  -  ${toShortDate(event.date).slice(0, 4)}   06`
   return (
-    <section id={t.title} name={t.title} className={s.about}>
+    <section id='aboutSection' name={t.title} className={s.about}>
       <h1 className={s.aboutTitle}>{t.title}</h1>
       <img
         className={s.cityscapeBottom}
@@ -59,8 +59,7 @@ const About = ({ name, about, events, assets }) => {
       </div>
       <span className={s.sideLabel}>{sideLabelText}</span>
       <HashMenu
-        sectionTitle={t.title}
-        items={cityPageHashItems}
+        sectionId={t.title.toLowerCase()}
         top={t.hashMenuTop}
       />
     </section>

@@ -5,7 +5,7 @@ export const text = {
   title: "Coming Soon",
   header: "Secret Design Challenge with Acteryx",
   body:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque sodales ut etiam sit amet nisl purus in. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.",
+    "We are thrilled to be partnering with Intrepid to host a design challenge in our store. There will be prizes, drinks, and snacks. Bring your creative tool kit to this installment of the Practice Makes series.",
   questionMarkSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/question-mark.png",
   questionMarkAlt: "Question Mark",
@@ -13,7 +13,7 @@ export const text = {
 
 const ComingSoon = () => {
   return (
-    <section id={text.title} className={s.comingSoon}>
+    <section id='comingSoon' className={s.comingSoon}>
       <h1 className={s.comingSoonTitle}>{text.title}</h1>
       <img
         className={s.questionMark}

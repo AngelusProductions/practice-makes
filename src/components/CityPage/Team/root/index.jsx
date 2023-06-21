@@ -1,6 +1,7 @@
 import React from "react"
 import * as s from "./styles.module.css"
 
+import HashMenu from "components/UI/HashMenu"
 import Member from "../Member"
 
 export const t = {
@@ -8,6 +9,7 @@ export const t = {
   header: "Meet the Team",
   cardSize: "15rem",
   cardMarginTop: "0",
+  hashMenuTop: '33rem'
 }
 
 const Team = ({ team }) => {
@@ -24,7 +26,7 @@ const Team = ({ team }) => {
 }
 
 const BaseTeam = ({ cardProps, team }) => (
-  <section id={t.title} name={t.title} className={s.team}>
+  <section id='teamSection' name={t.title} className={s.team}>
     <h1 className={s.teamHeader}>{t.header}</h1>
     <div className={s.teamList}>
       {team.map((member, index, team) => (
@@ -36,7 +38,11 @@ const BaseTeam = ({ cardProps, team }) => (
           {...member}
         />
       ))}
-    </div>
+    </div>      
+    <HashMenu
+      sectionId={t.title.toLowerCase()}
+      top={t.hashMenuTop}
+    />
   </section>
 )
 

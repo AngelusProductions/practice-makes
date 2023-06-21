@@ -1,8 +1,6 @@
 import React from "react"
 import * as s from "./styles.module.css"
 
-import { cityPageHashItems } from "constants/text"
-
 import Event from "../Event"
 import HashMenu from "components/UI/HashMenu"
 
@@ -28,7 +26,7 @@ const Archives = ({ events }) => {
 }
 
 const BaseArchives = ({ cardProps, events }) => (
-  <section id={t.title} name={t.title} className={s.archives}>
+  <section id='archivesSection' name={t.title} className={s.archives}>
     <h1 className={s.archivesHeader}>{t.title}</h1>
     {events.map((event, index, events) => (
       <Event
@@ -40,8 +38,7 @@ const BaseArchives = ({ cardProps, events }) => (
       />
     ))}
     <HashMenu
-      sectionTitle={t.title}
-      items={cityPageHashItems}
+      sectionId={t.title.toLowerCase()}
       top={t.hashMenuTop}
     />
   </section>

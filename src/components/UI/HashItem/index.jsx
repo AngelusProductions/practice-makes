@@ -1,18 +1,15 @@
 import React, { useState } from "react"
 import * as s from "./styles.module.css"
 
-import _ from 'lodash'
 import { scroller } from 'react-scroll'
 
-const HashItem = ({ item, sectionTitle, isInverted }) => {
+const HashItem = ({ item, sectionId, isInverted }) => {
   const [isHovering, setIsHovering] = useState(false)
   const onItemClick = e => {
-    const clickedItem = _.capitalize(e.target.innerText)
-    scroller.scrollTo(clickedItem, {
+    scroller.scrollTo(`${e.target.id}Section`, {
       duration: 1000,
       delay: 50,
-      smooth: 'easeInOutQuint',
-      offset: -66
+      smooth: 'easeInOutQuint'
     })
   }
   const itemStyles = {
@@ -22,8 +19,9 @@ const HashItem = ({ item, sectionTitle, isInverted }) => {
   const markerStyles = {
     borderLeftColor: isInverted ? 'white' : '#222222'
   }
-  return isHovering || item.name === sectionTitle ? (
+  return isHovering || item.id === sectionId ? (
     <span
+      id={item.id}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       onClick={onItemClick}

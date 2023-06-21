@@ -1,7 +1,6 @@
 import React from "react"
 import * as s from "./styles.module.css"
 
-import { cityPageHashItems } from "constants/text"
 import { toShortDate } from "constants/utils"
 
 import HashMenu from "components/UI/HashMenu"
@@ -11,7 +10,7 @@ export const t = {
   header: "Upcoming Event",
   upcomingEventName: "Empowerment",
   getTickets: "Get Tickets",
-  hashMenuTop: "49rem",
+  hashMenuTop: "41rem",
   logoSrc:
     "https://practice-makes-production.s3.amazonaws.com/UI/logo-city.png",
 }
@@ -40,7 +39,7 @@ const BaseEvents = ({
   linkUrl,
   dateText,
 }) => (
-  <section id={t.title} name={t.title} className={s.events}>
+  <section id='eventsSection' name={t.title} className={s.events}>
     <h1 className={s.eventsHeader}>{t.header}</h1>
     <img src={photoUrl} alt={name} className={s.eventsImage} />
     <div className={s.eventsBorder} />
@@ -58,8 +57,7 @@ const BaseEvents = ({
       </a>
     </div>
     <HashMenu
-      sectionTitle={t.title}
-      items={cityPageHashItems}
+      sectionId={t.title.toLowerCase()}
       top={t.hashMenuTop}
     />
   </section>

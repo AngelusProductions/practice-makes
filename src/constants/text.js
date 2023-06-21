@@ -17,23 +17,27 @@ export const homePageNavItems = [
 export const cityPageHashItems = [
   {
     name: "Welcome",
-    url: "welcome",
-  },
-  {
-    name: "Contact",
-    url: "contact",
-  },
-  {
-    name: "About",
-    url: "about",
-  },
-  {
-    name: "Archives",
-    url: "archives",
+    id: "welcome",
   },
   {
     name: "Events",
-    url: "events",
+    id: "events",
+  },
+  {
+    name: "Archives",
+    id: "archives",
+  },
+  {
+    name: "About",
+    id: "about",
+  },
+  {
+    name: "Team",
+    id: "team",
+  },
+  {
+    name: "Contact",
+    id: "contact",
   },
 ]
 

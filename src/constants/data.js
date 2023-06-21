@@ -116,14 +116,6 @@ export const cities = [
     ],
     team: [
       {
-        firstName: "Danielle",
-        lastName: "Teig",
-        job: "UX Designer, Manager",
-        linkUrl: "http://www.danielleteig.net/",
-        photoUrl:
-          "https://media-exp1.licdn.com/dms/image/C4E03AQFwsXOJrzyV1Q/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=w09WmYajmZ-dlGmmTpMshUXKGkUICIUy_R1LO8stOJU",
-      },
-      {
         firstName: "Julia",
         lastName: "Paranay",
         job: "UX Designer",

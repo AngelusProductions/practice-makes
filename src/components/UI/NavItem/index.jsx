@@ -1,7 +1,8 @@
 import React from "react"
-import { Link } from "@reach/router"
 
 import * as s from "./styles.module.css"
+
+import { scroller } from 'react-scroll'
 
 import { rootPath } from "constants/paths"
 
@@ -12,14 +13,21 @@ export const text = {
   tall: "4px",
 }
 
-const NavItem = ({ name, url, isNotLastItem, pathname }) => {
+const NavItem = ({ id, name, isNotLastItem, pathname }) => {
   const backgroundColor = pathname === rootPath ? text.black : text.white
   const width = pathname === rootPath ? text.short : text.tall
+    const onItemClick = e => {
+    scroller.scrollTo(`${e.target.id}Section`, {
+      duration: 1000,
+      delay: 50,
+      smooth: 'easeInOutQuint'
+    })
+  }
   return (
     <>
-      <Link to={url} key={name} className={s.navItem}>
+      <span id={id} onClick={onItemClick} className={s.navItem}>
         {name}
-      </Link>
+      </span>
       {isNotLastItem && (
         <div className={s.dashIcon} style={{ backgroundColor, width }} />
       )}

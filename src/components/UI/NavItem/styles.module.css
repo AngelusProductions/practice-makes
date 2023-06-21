@@ -1,3 +1,6 @@
+.navItem {
+  cursor: pointer;
+}
 .navItem:hover {
   transform: scale(1.03);
 }

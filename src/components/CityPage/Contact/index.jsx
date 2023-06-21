@@ -1,8 +1,5 @@
 import React from "react"
-// import { withRouter } from "react-router-dom"
 import * as s from "./styles.module.css"
-
-import { cityPageHashItems } from "constants/text"
 
 import HashMenu from "components/UI/HashMenu"
 
@@ -24,11 +21,11 @@ export const t = {
   },
   twitterLink: "https://twitter.com/intpd?lang=en",
   instagramLink: "https://www.instagram.com/intpd/?hl=en",
-  hashMenuTop: "45rem",
+  hashMenuTop: "40rem",
 }
 
 const Contact = ({ addressTop, addressBottom, assets }) => (
-  <section id={t.title} name={t.title} className={s.contact}>
+  <section id='contactSection' name={t.title} className={s.contact}>
     <h1 className={s.contactHeader}>{t.header}</h1>
 
     <div className={s.contactInfo}>
@@ -104,8 +101,7 @@ const Contact = ({ addressTop, addressBottom, assets }) => (
     </footer>
 
     <HashMenu
-      sectionTitle={t.title}
-      items={cityPageHashItems}
+      sectionId={t.title.toLowerCase()}
       top={t.hashMenuTop}
     />
   </section>
