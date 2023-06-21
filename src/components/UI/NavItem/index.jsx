@@ -20,7 +20,8 @@ const NavItem = ({ id, name, isNotLastItem, pathname }) => {
     scroller.scrollTo(`${e.target.id}Section`, {
       duration: 1000,
       delay: 50,
-      smooth: 'easeInOutQuint'
+      smooth: 'easeInOutQuint',
+      offset: -66
     })
   }
   return (

@@ -9,7 +9,8 @@ const HashItem = ({ item, sectionId, isInverted }) => {
     scroller.scrollTo(`${e.target.id}Section`, {
       duration: 1000,
       delay: 50,
-      smooth: 'easeInOutQuint'
+      smooth: 'easeInOutQuint',
+      offset: -66
     })
   }
   const itemStyles = {
